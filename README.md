@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LSM CompanyP
 
-## Getting Started
+Website institucional da **LSM CompanyP** — empresa moçambicana de energia solar, engenharia e construção sustentável.
 
-First, run the development server:
+Stack: **Next.js 16** (App Router) · **React 19** · **TypeScript** · **Tailwind CSS** · **Framer Motion** · **React Hook Form + Zod**
+
+## Requisitos
+
+- Node.js **20.9+**
+- npm 10+
+
+## Instalação
+
+```bash
+cd lsm-companyp
+npm install
+```
+
+Copie as variáveis de ambiente:
+
+```bash
+cp .env.example .env.local
+```
+
+Edite `.env.local` se necessário:
+
+| Variável | Descrição |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | URL pública (sitemap, OG, robots) |
+| `CONTACT_FORM_EMAIL` | Destino futuro do formulário de contacto |
+
+## Desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Deploy na Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Importe o repositório no [Vercel](https://vercel.com).
+2. Configure as variáveis de ambiente (`NEXT_PUBLIC_SITE_URL`, `CONTACT_FORM_EMAIL`).
+3. Deploy — o projeto não precisa de configuração adicional além das env vars.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ou via CLI:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npx vercel
+```
 
-## Deploy on Vercel
+## Estrutura
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+  app/            # layout, page, sitemap, robots, estilos globais
+  components/     # UI reutilizável (Button, Card, Counter, etc.)
+  sections/       # Secções da homepage (Header → Footer)
+  lib/            # constantes, validações, utils
+  types/          # tipos TypeScript
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notas
+
+- Imagens e vídeo do Hero são placeholders (Unsplash / Pexels) — procurar `TODO: substituir por imagem real do cliente` no código.
+- O formulário de contacto valida no cliente; a integração de email (Resend/Nodemailer) fica preparada via `CONTACT_FORM_EMAIL`.
+- Métricas em `StatsSection` devem ser confirmadas com dados reais do cliente.
