@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { Container } from "@/components/Container";
@@ -21,9 +20,12 @@ const socialIcons = {
 } as const;
 
 const QUICK_LINKS = [
-  { key: "home" as const, href: "#inicio" },
   { key: "about" as const, href: "#sobre" },
-  { key: "services" as const, href: "#servicos" },
+  { key: "solutions" as const, href: "#solucoes" },
+  { key: "epc" as const, href: "#epc" },
+  { key: "byd" as const, href: "#byd" },
+  { key: "victron" as const, href: "#victron" },
+  { key: "catalog" as const, href: "#catalogo" },
   { key: "projects" as const, href: "#projetos" },
   { key: "contact" as const, href: "#contacto" },
 ];
@@ -90,12 +92,12 @@ export function Footer() {
             </h3>
             <div className="mt-3 flex flex-wrap items-center gap-4">
               {PARTNERS.map((partner) => (
-                <Image
+                // TODO: substituir por logótipos oficiais dos parceiros
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
                   key={partner.name}
                   src={partner.logo}
                   alt={partner.name}
-                  width={96}
-                  height={36}
                   className="h-8 w-auto object-contain brightness-0 invert opacity-80"
                 />
               ))}

@@ -1,25 +1,29 @@
 import type { Dictionary } from "./core";
+import { en } from "./core";
+import { fromEnglish } from "./merge";
 
-export const es: Dictionary = {
+export const es: Dictionary = fromEnglish(en, {
   nav: {
     home: "Inicio",
-    about: "Sobre nosotros",
-    services: "Servicios",
+    about: "Quiénes somos",
     solutions: "Soluciones",
+    epc: "Modelo EPC",
+    byd: "BYD",
+    victron: "Victron",
+    catalog: "Catálogo",
     projects: "Proyectos",
-    contact: "Contacto",
+    contact: "Contactos",
     requestQuote: "Solicitar presupuesto",
   },
   solutionsMenu: [
-    { title: "Energía solar", description: "Sistemas fotovoltaicos de alto rendimiento" },
-    { title: "Baterías", description: "Almacenamiento seguro y eficiente" },
-    { title: "Off-grid", description: "Autonomía energética en zonas remotas" },
-    { title: "Híbridos", description: "Integración inteligente red + solar" },
-    { title: "Construcción sostenible", description: "Obras de bajo impacto ambiental" },
-    { title: "Purificación de agua", description: "Agua limpia con energía solar" },
+    { title: "Residencial", description: "Autonomía energética para casas y condominios" },
+    { title: "Comercial", description: "Soluciones escalables para negocios" },
+    { title: "Industrial", description: "Sistemas robustos de alta demanda" },
+    { title: "Turismo", description: "Energía fiable para lodges y resorts" },
+    { title: "Hospitales", description: "Continuidad crítica con respaldo solar" },
+    { title: "ONG", description: "Proyectos sociales de impacto positivo" },
   ],
   hero: {
-    eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Soluciones inteligentes para energía sostenible",
     subtitle:
       "Diseñamos, instalamos y mantenemos sistemas solares de alto rendimiento para hogares, empresas y proyectos remotos.",
@@ -39,22 +43,8 @@ export const es: Dictionary = {
       "LSM — Lodge Solutions Mozambique se especializa en energía solar, ingeniería y construcción sostenible. Ofrecemos soluciones fiables, a medida y duraderas.",
     highlights: ["Ingeniería", "Energía solar", "Construcción sostenible", "Soluciones completas"],
   },
-  services: {
-    eyebrow: "Nuestros servicios",
-    title: "Soluciones completas de energía y construcción",
-    description:
-      "Del diseño al monitoreo, cubrimos todo el ciclo de sus necesidades energéticas e infraestructura sostenible.",
-    items: [
-      { title: "Energía solar", description: "Diseño e instalación de sistemas fotovoltaicos para hogares, comercio e industria." },
-      { title: "Baterías", description: "Almacenamiento avanzado para autonomía y seguridad energética." },
-      { title: "Sistemas off-grid", description: "Energía independiente para lodges, comunidades y operaciones remotas." },
-      { title: "Sistemas híbridos", description: "Combinación inteligente de red y solar." },
-      { title: "Construcción sostenible", description: "Ingeniería y obras con bajo impacto ambiental." },
-      { title: "Purificación de agua", description: "Tratamiento y purificación alimentados por energía solar." },
-    ],
-  },
   solutions: {
-    eyebrow: "Soluciones energéticas",
+    eyebrow: "Soluciones de energía solar",
     title: "La energía adecuada para cada sector",
     description:
       "Soluciones adaptadas a hogares, empresas, industria, turismo, salud y ONG.",
@@ -67,35 +57,95 @@ export const es: Dictionary = {
       { title: "ONG", description: "Proyectos comunitarios con impacto ambiental positivo." },
     ],
   },
-  howItWorks: {
-    eyebrow: "Cómo funciona",
-    title: "Del primer contacto al monitoreo continuo",
-    description: "Un proceso claro y transparente para garantizar calidad en cada etapa.",
+  epc: {
+    eyebrow: "Modelo EPC",
+    description:
+      "Un modelo integrado que cubre todo el ciclo del proyecto — de la ingeniería a la construcción — con responsabilidad única.",
     steps: [
-      { title: "Consulta", description: "Evaluamos las necesidades energéticas y el contexto del sitio." },
-      { title: "Diseño", description: "Creamos una solución técnica a medida con presupuesto claro." },
-      { title: "Instalación", description: "Equipos especializados ejecutan con seguridad y calidad." },
-      { title: "Pruebas", description: "Validamos rendimiento, seguridad y cumplimiento del sistema." },
-      { title: "Monitoreo", description: "Seguimiento continuo y soporte técnico 24/7." },
+      {
+        letter: "E",
+        title: "Engineering",
+        description:
+          "Estudio técnico, dimensionamiento y diseño ejecutivo adaptados al sitio y a las necesidades energéticas.",
+      },
+      {
+        letter: "P",
+        title: "Procurement",
+        description:
+          "Selección y adquisición de equipos certificados (BYD, Victron y socios) con logística eficiente.",
+      },
+      {
+        letter: "C",
+        title: "Construction",
+        description:
+          "Instalación, puesta en marcha y entrega llave en mano por equipos especializados.",
+      },
     ],
   },
-  partners: {
-    eyebrow: "Socios",
-    title: "Tecnología de marcas de referencia",
-    description: "Colaboramos con socios internacionales para sistemas fiables y de alto rendimiento.",
+  byd: {
+    eyebrow: "Socio oficial",
+    title: "BYD en Mozambique",
+    description:
+      "Como socio BYD, LSM ofrece baterías de litio de referencia mundial, con soporte técnico local y stock en el mercado mozambicano.",
+    benefits: [
+      "Baterías de litio de alta densidad",
+      "Garantía internacional del fabricante",
+      "Soporte técnico local por el equipo LSM",
+      "Stock disponible en Mozambique",
+    ],
+    cta: "Ver catálogo BYD",
   },
-  whyUs: {
-    eyebrow: "Por qué elegir LSM",
-    title: "Experiencia, ingeniería y compromiso sostenible",
-    description: "Más que instalar equipos — acompañamos todo el ciclo de su solución energética.",
+  victron: {
+    eyebrow: "Proveedor autorizado",
+    description:
+      "Suministramos equipos Victron Energy y soporte técnico especializado para inversores, controladores y sistemas off-grid/híbridos.",
+    benefits: [
+      "Inversores y controladores Victron",
+      "Asistencia técnica especializada",
+      "Piezas y componentes disponibles",
+      "Formación para instaladores y clientes",
+    ],
+    cta: "Ver catálogo Victron",
+  },
+  catalog: {
+    eyebrow: "Catálogo",
+    title: "Catálogo de soluciones",
+    description:
+      "Explore equipos y kits por categoría. Filtre por marca o tipo de solución y descargue el catálogo completo.",
+    filters: ["Todos", "BYD", "Victron", "Kits solares", "Accesorios"],
     items: [
-      "Más de 17 años",
-      "Ingeniería especializada",
-      "Soluciones completas",
-      "Socios internacionales",
-      "Proyectos personalizados",
-      "Bajo impacto ambiental",
+      {
+        title: "BYD Battery-Box Premium",
+        category: "BYD",
+        description: "Almacenamiento de litio modular para sistemas residenciales y comerciales.",
+      },
+      {
+        title: "Victron MultiPlus Inverter",
+        category: "Victron",
+        description: "Inversor/cargador compacto para sistemas off-grid e híbridos.",
+      },
+      {
+        title: "Kit solar residencial 5kW",
+        category: "Kits solares",
+        description: "Kit completo con paneles, inversor y estructura de montaje.",
+      },
+      {
+        title: "Victron SmartSolar MPPT",
+        category: "Victron",
+        description: "Controlador de carga inteligente con monitoreo remoto.",
+      },
+      {
+        title: "BYD Comercial HV",
+        category: "BYD",
+        description: "Solución de baterías de alta tensión para operaciones comerciales.",
+      },
+      {
+        title: "Accesorios y cables DC",
+        category: "Accesorios",
+        description: "Componentes certificados para una instalación segura y duradera.",
+      },
     ],
+    downloadCta: "Descargar catálogo completo (PDF)",
   },
   projects: {
     eyebrow: "Proyectos",
@@ -111,21 +161,8 @@ export const es: Dictionary = {
       { title: "Resort costero — Inhambane", category: "Lodges" },
     ],
   },
-  faq: {
-    eyebrow: "FAQ",
-    title: "Preguntas frecuentes",
-    description: "Aclaraciones sobre instalación, garantías y funcionamiento de los sistemas solares.",
-    items: [
-      { question: "¿Cuánto tarda la instalación?", answer: "Depende del tamaño del proyecto. Las instalaciones residenciales suelen completarse en pocos días tras la aprobación del diseño; los proyectos comerciales o industriales pueden requerir semanas." },
-      { question: "¿Qué garantías ofrecen?", answer: "Trabajamos con marcas reconocidas y ofrecemos garantía de equipo e instalación." },
-      { question: "¿Funciona si falla la red?", answer: "Sí. Con sistemas híbridos u off-grid y baterías, el suministro puede continuar." },
-      { question: "¿LSM también hace mantenimiento?", answer: "Sí. Ofrecemos planes de mantenimiento preventivo y soporte técnico." },
-      { question: "¿Se necesitan permisos?", answer: "Según la ubicación y la potencia, pueden requerirse autorizaciones locales. Nuestro equipo le orienta." },
-      { question: "¿Funcionan bien en el clima mozambicano?", answer: "Absolutamente. Dimensionamos según la irradiación solar local y el clima de la región." },
-    ],
-  },
   contact: {
-    eyebrow: "Contacto",
+    eyebrow: "Contactos",
     title: "Hablemos de su proyecto",
     description: "Solicite un presupuesto o agenda una consulta técnica con nuestro equipo.",
     name: "Nombre",
@@ -138,7 +175,6 @@ export const es: Dictionary = {
     error: "No se pudo enviar. Inténtelo de nuevo o contáctenos por WhatsApp.",
     phoneLabel: "Teléfono",
     emailLabel: "Correo",
-    whatsappLabel: "WhatsApp",
     whatsappValue: "Chatear en WhatsApp",
     addressLabel: "Dirección",
     address: "Inhambane, Mozambique",
@@ -152,28 +188,28 @@ export const es: Dictionary = {
     rights: "Todos los derechos reservados.",
   },
   language: "Idioma",
-};
+});
 
-export const de: Dictionary = {
+export const de: Dictionary = fromEnglish(en, {
   nav: {
     home: "Start",
     about: "Über uns",
-    services: "Leistungen",
     solutions: "Lösungen",
+    epc: "EPC-Modell",
+    catalog: "Katalog",
     projects: "Projekte",
-    contact: "Kontakt",
+    contact: "Kontakte",
     requestQuote: "Angebot anfordern",
   },
   solutionsMenu: [
-    { title: "Solarenergie", description: "Hochleistungs-Photovoltaiksysteme" },
-    { title: "Batterien", description: "Sichere und effiziente Speicherung" },
-    { title: "Off-Grid", description: "Energieautonomie in abgelegenen Gebieten" },
-    { title: "Hybrid", description: "Intelligente Netz- + Solarintegration" },
-    { title: "Nachhaltiges Bauen", description: "Bauten mit geringem Umweltfußabdruck" },
-    { title: "Wasseraufbereitung", description: "Sauberes Wasser mit Solarenergie" },
+    { title: "Wohnbereich", description: "Energieautonomie für Häuser und Anlagen" },
+    { title: "Gewerbe", description: "Skalierbare Lösungen für Unternehmen" },
+    { title: "Industrie", description: "Robuste Systeme für hohen Bedarf" },
+    { title: "Tourismus", description: "Zuverlässige Energie für Lodges und Resorts" },
+    { title: "Krankenhäuser", description: "Kritische Versorgungssicherheit mit Solar" },
+    { title: "NGOs", description: "Soziale Projekte mit positivem Impact" },
   ],
   hero: {
-    eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Intelligente Lösungen für nachhaltige Energie",
     subtitle:
       "Wir planen, installieren und warten hocheffiziente Solarsysteme für Wohnungen, Unternehmen und abgelegene Projekte.",
@@ -193,25 +229,9 @@ export const de: Dictionary = {
       "LSM — Lodge Solutions Mozambique ist auf Solarenergie, Engineering und nachhaltiges Bauen spezialisiert. Wir liefern zuverlässige, maßgeschneiderte und langlebige Lösungen.",
     highlights: ["Engineering", "Solarenergie", "Nachhaltiges Bauen", "Komplettlösungen"],
   },
-  services: {
-    eyebrow: "Unsere Leistungen",
-    title: "Komplette Energie- und Baulösungen",
-    description:
-      "Von der Planung bis zum Monitoring begleiten wir den gesamten Lebenszyklus Ihrer Energiebedarfe.",
-    items: [
-      { title: "Solarenergie", description: "Planung und Installation von Photovoltaik für Wohnen, Gewerbe und Industrie." },
-      { title: "Batterien", description: "Speicherlösungen für Autonomie und Versorgungssicherheit." },
-      { title: "Off-Grid-Systeme", description: "Netzunabhängige Energie für Lodges, Gemeinden und Remote-Standorte." },
-      { title: "Hybridsysteme", description: "Intelligente Kombination aus Netz und Solar." },
-      { title: "Nachhaltiges Bauen", description: "Engineering und Bau mit umweltfreundlichen Materialien." },
-      { title: "Wasseraufbereitung", description: "Solarbetriebene Aufbereitungs- und Reinigungssysteme." },
-    ],
-  },
   solutions: {
-    eyebrow: "Energielösungen",
+    eyebrow: "Solarenergielösungen",
     title: "Die richtige Energie für jeden Sektor",
-    description:
-      "Lösungen für Wohnen, Unternehmen, Industrie, Tourismus, Gesundheit und NGOs.",
     sectors: [
       { title: "Wohnbereich", description: "Energieautonomie und Kostensenkung für Häuser und Anlagen." },
       { title: "Gewerbe", description: "Skalierbare Lösungen für Büros, Ladenlokale und Businesszentren." },
@@ -221,65 +241,71 @@ export const de: Dictionary = {
       { title: "NGOs", description: "Gemeinschaftsprojekte mit positivem Umweltbeitrag." },
     ],
   },
-  howItWorks: {
-    eyebrow: "So funktioniert’s",
-    title: "Vom Erstkontakt bis zum Dauer-Monitoring",
-    description: "Ein klarer, transparenter Prozess für Qualität in jedem Schritt.",
+  epc: {
+    eyebrow: "EPC-Modell",
+    description:
+      "Ein integriertes Modell für den gesamten Projektzyklus — vom Engineering bis zur Construction — mit klarer Gesamtverantwortung.",
     steps: [
-      { title: "Beratung", description: "Wir bewerten Energiebedarf und Standort." },
-      { title: "Planung", description: "Wir entwerfen eine maßgeschneiderte technische Lösung mit klarem Budget." },
-      { title: "Installation", description: "Spezialteams arbeiten sicher und qualitativ hochwertig." },
-      { title: "Tests", description: "Wir prüfen Leistung, Sicherheit und Konformität." },
-      { title: "Monitoring", description: "Kontinuierliche Begleitung und 24/7-Support." },
+      {
+        letter: "E",
+        title: "Engineering",
+        description:
+          "Technische Analyse, Dimensionierung und Ausführungsplanung passgenau zum Standort.",
+      },
+      {
+        letter: "P",
+        title: "Procurement",
+        description:
+          "Beschaffung zertifizierter Geräte (BYD, Victron und Partner) mit effizienter Logistik.",
+      },
+      {
+        letter: "C",
+        title: "Construction",
+        description:
+          "Installation, Inbetriebnahme und schlüsselfertige Übergabe durch Spezialteams.",
+      },
     ],
   },
-  partners: {
-    eyebrow: "Partner",
-    title: "Technik führender Marken",
-    description: "Wir arbeiten mit internationalen Partnern für zuverlässige Hochleistungssysteme.",
-  },
-  whyUs: {
-    eyebrow: "Warum LSM",
-    title: "Erfahrung, Engineering und Nachhaltigkeit",
-    description: "Mehr als Installation — wir begleiten den gesamten Lebenszyklus Ihrer Lösung.",
-    items: [
-      "Über 17 Jahre",
-      "Spezialisierte Ingenieurskunst",
-      "Komplettlösungen",
-      "Internationale Partner",
-      "Individuelle Projekte",
-      "Geringer Umweltfußabdruck",
+  byd: {
+    eyebrow: "Offizieller Partner",
+    title: "BYD in Mosambik",
+    description:
+      "Als BYD-Partner bietet LSM Lithiumbatterien von Weltniveau mit lokalem Support und Lagerbestand in Mosambik.",
+    benefits: [
+      "Lithiumbatterien hoher Energiedichte",
+      "Internationale Herstellergarantie",
+      "Lokaler technischer Support durch LSM",
+      "Lagerbestand in Mosambik verfügbar",
     ],
+    cta: "BYD-Katalog ansehen",
+  },
+  victron: {
+    eyebrow: "Autorisierter Lieferant",
+    description:
+      "Wir liefern Victron-Energy-Geräte und spezialisierten Support für Wechselrichter, Regler und Off-Grid-/Hybridsysteme.",
+    benefits: [
+      "Victron-Wechselrichter und Laderegler",
+      "Spezialisierte technische Unterstützung",
+      "Ersatzteile und Komponenten verfügbar",
+      "Schulungen für Installateure und Kunden",
+    ],
+    cta: "Victron-Katalog ansehen",
+  },
+  catalog: {
+    eyebrow: "Katalog",
+    title: "Lösungskatalog",
+    description:
+      "Entdecken Sie Geräte und Kits nach Kategorie. Filtern Sie nach Marke oder Typ und laden Sie den Gesamtkatalog herunter.",
+    filters: ["Alle", "BYD", "Victron", "Solarkits", "Zubehör"],
+    downloadCta: "Gesamtkatalog herunterladen (PDF)",
   },
   projects: {
     eyebrow: "Projekte",
     title: "Referenzen in Mosambik",
-    description: "Eine Auswahl an Solar-, Bau- und Autonomieprojekten.",
     filters: ["Alle", "Solar", "Bau", "Batterien", "Lodges"],
-    items: [
-      { title: "Private Solaranlage — Inhambane", category: "Solar" },
-      { title: "Eco-Lodge — Inhambane", category: "Lodges" },
-      { title: "Gewerblicher Batteriespeicher", category: "Batterien" },
-      { title: "Nachhaltiges Gebäude — Inhambane", category: "Bau" },
-      { title: "Ländliches Off-Grid-System", category: "Solar" },
-      { title: "Küstenresort — Inhambane", category: "Lodges" },
-    ],
-  },
-  faq: {
-    eyebrow: "FAQ",
-    title: "Häufige Fragen",
-    description: "Antworten zu Installation, Garantien und Funktion von Solarsystemen.",
-    items: [
-      { question: "Wie lange dauert die Installation?", answer: "Die Dauer hängt vom Projektumfang ab. Wohnanlagen sind oft nach wenigen Tagen fertig; Gewerbe- und Industrieprojekte können Wochen benötigen." },
-      { question: "Welche Garantien bieten Sie?", answer: "Wir nutzen anerkannte Marken und bieten Geräte- und Installationsgarantien." },
-      { question: "Funktioniert es bei Netzausfall?", answer: "Ja. Mit Hybrid- oder Off-Grid-Systemen und Batterien bleibt die Versorgung möglich." },
-      { question: "Bietet LSM Wartung an?", answer: "Ja. Wir bieten präventive Wartungspläne und technischen Support." },
-      { question: "Sind Genehmigungen nötig?", answer: "Je nach Standort und Leistung können lokale Genehmigungen nötig sein. Unser Team begleitet Sie." },
-      { question: "Eignen sich die Systeme für das Klima in Mosambik?", answer: "Ja. Wir dimensionieren nach lokaler Sonneneinstrahlung und Klima." },
-    ],
   },
   contact: {
-    eyebrow: "Kontakt",
+    eyebrow: "Kontakte",
     title: "Sprechen wir über Ihr Projekt",
     description: "Fordern Sie ein Angebot an oder vereinbaren Sie eine technische Beratung.",
     name: "Name",
@@ -292,7 +318,6 @@ export const de: Dictionary = {
     error: "Senden fehlgeschlagen. Bitte erneut versuchen oder per WhatsApp kontaktieren.",
     phoneLabel: "Telefon",
     emailLabel: "E-Mail",
-    whatsappLabel: "WhatsApp",
     whatsappValue: "Auf WhatsApp chatten",
     addressLabel: "Adresse",
     address: "Inhambane, Mosambik",
@@ -306,28 +331,28 @@ export const de: Dictionary = {
     rights: "Alle Rechte vorbehalten.",
   },
   language: "Sprache",
-};
+});
 
-export const it: Dictionary = {
+export const it: Dictionary = fromEnglish(en, {
   nav: {
     home: "Home",
     about: "Chi siamo",
-    services: "Servizi",
     solutions: "Soluzioni",
+    epc: "Modello EPC",
+    catalog: "Catalogo",
     projects: "Progetti",
-    contact: "Contatto",
+    contact: "Contatti",
     requestQuote: "Richiedi preventivo",
   },
   solutionsMenu: [
-    { title: "Energia solare", description: "Sistemi fotovoltaici ad alte prestazioni" },
-    { title: "Batterie", description: "Accumulo sicuro ed efficiente" },
-    { title: "Off-grid", description: "Autonomia energetica in zone remote" },
-    { title: "Ibridi", description: "Integrazione intelligente rete + solare" },
-    { title: "Costruzione sostenibile", description: "Opere a basso impatto ambientale" },
-    { title: "Purificazione acqua", description: "Acqua pulita con energia solare" },
+    { title: "Residenziale", description: "Autonomia energetica per case e condomini" },
+    { title: "Commerciale", description: "Soluzioni scalabili per le imprese" },
+    { title: "Industriale", description: "Sistemi robusti ad alta domanda" },
+    { title: "Turismo", description: "Energia affidabile per lodge e resort" },
+    { title: "Ospedali", description: "Continuità critica con backup solare" },
+    { title: "ONG", description: "Progetti sociali ad impatto positivo" },
   ],
   hero: {
-    eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Soluzioni intelligenti per l’energia sostenibile",
     subtitle:
       "Progettiamo, installiamo e manuteniamo sistemi solari ad alte prestazioni per abitazioni, aziende e progetti remoti.",
@@ -347,25 +372,9 @@ export const it: Dictionary = {
       "LSM — Lodge Solutions Mozambique è specializzata in energia solare, ingegneria e costruzione sostenibile. Offriamo soluzioni affidabili, su misura e durature.",
     highlights: ["Ingegneria", "Energia solare", "Costruzione sostenibile", "Soluzioni complete"],
   },
-  services: {
-    eyebrow: "I nostri servizi",
-    title: "Soluzioni complete di energia e costruzione",
-    description:
-      "Dal progetto al monitoraggio, copriamo l’intero ciclo delle vostre esigenze energetiche.",
-    items: [
-      { title: "Energia solare", description: "Progettazione e installazione di sistemi fotovoltaici per case, commercio e industria." },
-      { title: "Batterie", description: "Soluzioni di accumulo avanzate per autonomia e sicurezza energetica." },
-      { title: "Sistemi off-grid", description: "Energia indipendente per lodge, comunità e siti remoti." },
-      { title: "Sistemi ibridi", description: "Combinazione intelligente di rete e solare." },
-      { title: "Costruzione sostenibile", description: "Ingegneria e costruzioni a basso impatto ambientale." },
-      { title: "Purificazione acqua", description: "Sistemi di trattamento alimentati a energia solare." },
-    ],
-  },
   solutions: {
-    eyebrow: "Soluzioni energetiche",
+    eyebrow: "Soluzioni di energia solare",
     title: "L’energia giusta per ogni settore",
-    description:
-      "Soluzioni per residenziale, commerciale, industria, turismo, sanità e ONG.",
     sectors: [
       { title: "Residenziale", description: "Autonomia energetica e riduzione costi per case e condomini." },
       { title: "Commerciale", description: "Soluzioni scalabili per uffici, negozi e centri business." },
@@ -375,65 +384,71 @@ export const it: Dictionary = {
       { title: "ONG", description: "Progetti comunitari con impatto ambientale positivo." },
     ],
   },
-  howItWorks: {
-    eyebrow: "Come funziona",
-    title: "Dal primo contatto al monitoraggio continuo",
-    description: "Un processo chiaro e trasparente per garantire qualità in ogni fase.",
+  epc: {
+    eyebrow: "Modello EPC",
+    description:
+      "Un modello integrato che copre l’intero ciclo del progetto — dall’ingegneria alla costruzione — con unica responsabilità.",
     steps: [
-      { title: "Consultazione", description: "Valutiamo fabbisogno energetico e contesto del sito." },
-      { title: "Progetto", description: "Progettiamo una soluzione tecnica su misura con budget chiaro." },
-      { title: "Installazione", description: "Team specializzati eseguono con sicurezza e qualità." },
-      { title: "Test", description: "Validiamo prestazioni, sicurezza e conformità." },
-      { title: "Monitoraggio", description: "Follow-up continuo e supporto tecnico 24/7." },
+      {
+        letter: "E",
+        title: "Engineering",
+        description:
+          "Studio tecnico, dimensionamento e progetto esecutivo adattati al sito e alle esigenze energetiche.",
+      },
+      {
+        letter: "P",
+        title: "Procurement",
+        description:
+          "Selezione e acquisto di attrezzature certificate (BYD, Victron e partner) con logistica efficiente.",
+      },
+      {
+        letter: "C",
+        title: "Construction",
+        description:
+          "Installazione, commissioning e consegna chiavi in mano da team specializzati.",
+      },
     ],
   },
-  partners: {
-    eyebrow: "Partner",
-    title: "Tecnologia di marchi di riferimento",
-    description: "Collaboriamo con partner internazionali per sistemi affidabili e performanti.",
-  },
-  whyUs: {
-    eyebrow: "Perché scegliere LSM",
-    title: "Esperienza, ingegneria e impegno sostenibile",
-    description: "Più che installare attrezzature — accompagniamo l’intero ciclo della vostra soluzione.",
-    items: [
-      "Oltre 17 anni",
-      "Ingegneria specializzata",
-      "Soluzioni complete",
-      "Partner internazionali",
-      "Progetti personalizzati",
-      "Basso impatto ambientale",
+  byd: {
+    eyebrow: "Partner ufficiale",
+    title: "BYD in Mozambico",
+    description:
+      "Come partner BYD, LSM fornisce batterie al litio di riferimento mondiale, con supporto tecnico locale e stock sul mercato mozambicano.",
+    benefits: [
+      "Batterie al litio ad alta densità",
+      "Garanzia internazionale del produttore",
+      "Supporto tecnico locale dal team LSM",
+      "Stock disponibile in Mozambico",
     ],
+    cta: "Vedi catalogo BYD",
+  },
+  victron: {
+    eyebrow: "Fornitore autorizzato",
+    description:
+      "Forniamo attrezzature Victron Energy e supporto tecnico specializzato per inverter, controller e sistemi off-grid/ibridi.",
+    benefits: [
+      "Inverter e controller Victron",
+      "Assistenza tecnica specializzata",
+      "Ricambi e componenti disponibili",
+      "Formazione per installatori e clienti",
+    ],
+    cta: "Vedi catalogo Victron",
+  },
+  catalog: {
+    eyebrow: "Catalogo",
+    title: "Catalogo soluzioni",
+    description:
+      "Esplorate attrezzature e kit per categoria. Filtrate per marca o tipo e scaricate il catalogo completo.",
+    filters: ["Tutti", "BYD", "Victron", "Kit solari", "Accessori"],
+    downloadCta: "Scarica catalogo completo (PDF)",
   },
   projects: {
     eyebrow: "Progetti",
     title: "Portfolio di realizzazioni in Mozambico",
-    description: "Una selezione di progetti solari, edili e di autonomia energetica.",
     filters: ["Tutti", "Solar", "Costruzione", "Batterie", "Lodges"],
-    items: [
-      { title: "Impianto solare residenziale — Inhambane", category: "Solar" },
-      { title: "Eco lodge — Inhambane", category: "Lodges" },
-      { title: "Banco batterie commerciale", category: "Batterie" },
-      { title: "Edificio sostenibile — Inhambane", category: "Costruzione" },
-      { title: "Sistema off-grid rurale", category: "Solar" },
-      { title: "Resort costiero — Inhambane", category: "Lodges" },
-    ],
-  },
-  faq: {
-    eyebrow: "FAQ",
-    title: "Domande frequenti",
-    description: "Chiarimenti su installazione, garanzie e funzionamento dei sistemi solari.",
-    items: [
-      { question: "Quanto dura l’installazione?", answer: "Dipende dalla dimensione del progetto. Le installazioni residenziali spesso terminano in pochi giorni dopo l’approvazione; i progetti commerciali o industriali possono richiedere settimane." },
-      { question: "Quali garanzie offrite?", answer: "Lavoriamo con marchi riconosciuti e offriamo garanzia su attrezzature e installazione." },
-      { question: "Funziona in caso di blackout?", answer: "Sì. Con sistemi ibridi o off-grid e batterie, l’alimentazione può continuare." },
-      { question: "LSM fa anche manutenzione?", answer: "Sì. Offriamo piani di manutenzione preventiva e supporto tecnico." },
-      { question: "Servono autorizzazioni?", answer: "A seconda di luogo e potenza possono servire autorizzazioni locali. Il nostro team vi guida." },
-      { question: "I sistemi funzionano bene nel clima mozambicano?", answer: "Assolutamente. Dimensioniamo per irraggiamento e clima locali." },
-    ],
   },
   contact: {
-    eyebrow: "Contatto",
+    eyebrow: "Contatti",
     title: "Parliamo del vostro progetto",
     description: "Richiedete un preventivo o fissate una consulenza tecnica.",
     name: "Nome",
@@ -446,7 +461,6 @@ export const it: Dictionary = {
     error: "Invio non riuscito. Riprovate o contattateci su WhatsApp.",
     phoneLabel: "Telefono",
     emailLabel: "Email",
-    whatsappLabel: "WhatsApp",
     whatsappValue: "Chatta su WhatsApp",
     addressLabel: "Indirizzo",
     address: "Inhambane, Mozambico",
@@ -460,4 +474,4 @@ export const it: Dictionary = {
     rights: "Tutti i diritti riservati.",
   },
   language: "Lingua",
-};
+});

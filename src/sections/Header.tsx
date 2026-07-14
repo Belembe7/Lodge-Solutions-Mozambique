@@ -32,9 +32,9 @@ const iconMap = {
 
 const NAV_HREFS = [
   { key: "home", href: "#inicio" },
-  { key: "about", href: "#sobre" },
-  { key: "services", href: "#servicos" },
   { key: "solutions", href: "#solucoes" },
+  { key: "victron", href: "#victron" },
+  { key: "catalog", href: "#catalogo" },
   { key: "projects", href: "#projetos" },
   { key: "contact", href: "#contacto" },
 ] as const;
@@ -101,7 +101,7 @@ export function Header() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "rounded-lg px-2.5 py-1.5 text-sm font-medium whitespace-nowrap transition-colors",
+                    "rounded-lg px-2 py-1.5 text-sm font-medium whitespace-nowrap transition-colors xl:px-2.5",
                     linkClass,
                   )}
                 >
@@ -153,7 +153,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "rounded-lg px-2.5 py-1.5 text-sm font-medium whitespace-nowrap transition-colors",
+                  "rounded-lg px-2 py-1.5 text-sm font-medium whitespace-nowrap transition-colors xl:px-2.5",
                   linkClass,
                 )}
               >
@@ -233,14 +233,14 @@ export function Header() {
                   <p className="mb-2 px-4 text-xs font-semibold tracking-wider text-brown-primary uppercase">
                     {t.nav.solutions}
                   </p>
-                  {t.solutionsMenu.map((item) => (
+                  {SOLUTION_MENU.map((item, index) => (
                     <Link
-                      key={item.title}
-                      href="#servicos"
+                      key={item.href}
+                      href={item.href}
                       className="block rounded-2xl px-4 py-2.5 text-sm text-dark-gray/80 hover:bg-light-gray"
                       onClick={() => setMobileOpen(false)}
                     >
-                      {item.title}
+                      {t.solutionsMenu[index]?.title ?? item.title}
                     </Link>
                   ))}
                 </div>

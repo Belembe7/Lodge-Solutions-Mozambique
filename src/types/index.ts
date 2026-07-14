@@ -32,6 +32,15 @@ export type ProjectItem = {
   image: string;
 };
 
+export type CatalogItem = {
+  id: string;
+  title: string;
+  description: string;
+  category: "BYD" | "Victron" | "Kits Solares" | "Acessórios";
+  // TODO: substituir por imagem real do produto
+  image: string;
+};
+
 export type FaqItem = {
   question: string;
   answer: string;

@@ -1,4 +1,5 @@
 import type {
+  CatalogItem,
   FaqItem,
   NavItem,
   ProjectItem,
@@ -24,48 +25,51 @@ export const CONTACT = {
 
 export const NAV_LINKS: NavItem[] = [
   { label: "Início", href: "#inicio" },
-  { label: "Sobre Nós", href: "#sobre" },
-  { label: "Serviços", href: "#servicos" },
+  { label: "Quem Somos", href: "#sobre" },
   { label: "Soluções", href: "#solucoes" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Modelo EPC", href: "#epc" },
+  { label: "BYD", href: "#byd" },
+  { label: "Victron", href: "#victron" },
+  { label: "Catálogo", href: "#catalogo" },
+  { label: "Projectos", href: "#projetos" },
+  { label: "Contactos", href: "#contacto" },
 ];
 
 export const SOLUTION_MENU: SolutionMenuItem[] = [
   {
-    title: "Energia Solar",
-    description: "Sistemas fotovoltaicos de alta performance",
-    href: "#servicos",
-    icon: "Sun",
-  },
-  {
-    title: "Baterias",
-    description: "Armazenamento seguro e eficiente",
-    href: "#servicos",
-    icon: "BatteryCharging",
-  },
-  {
-    title: "Off-grid",
-    description: "Autonomia energética em zonas remotas",
-    href: "#servicos",
+    title: "Residencial",
+    description: "Autonomia energética para casas e condomínios",
+    href: "#residencial",
     icon: "Home",
   },
   {
-    title: "Híbridos",
-    description: "Integração rede + solar inteligente",
-    href: "#servicos",
-    icon: "Zap",
-  },
-  {
-    title: "Construção Sustentável",
-    description: "Obras com baixo impacto ambiental",
-    href: "#servicos",
+    title: "Comercial",
+    description: "Soluções escaláveis para negócios",
+    href: "#comercial",
     icon: "Building2",
   },
   {
-    title: "Purificação de Água",
-    description: "Água limpa com energia solar",
-    href: "#servicos",
+    title: "Industrial",
+    description: "Sistemas robustos de alta demanda",
+    href: "#industrial",
+    icon: "Zap",
+  },
+  {
+    title: "Turismo",
+    description: "Energia fiável para lodges e resorts",
+    href: "#turismo",
+    icon: "Sun",
+  },
+  {
+    title: "Hospitais",
+    description: "Continuidade crítica com backup solar",
+    href: "#hospitais",
+    icon: "BatteryCharging",
+  },
+  {
+    title: "ONGs",
+    description: "Projectos sociais de impacto positivo",
+    href: "#ongs",
     icon: "Droplets",
   },
 ];
@@ -205,15 +209,15 @@ export const HOW_IT_WORKS = [
 export const PARTNERS = [
   {
     name: "BYD",
-    logo: "/images/partners/byd.png",
+    logo: "/images/partners/byd.svg",
   },
   {
     name: "Victron Energy",
-    logo: "/images/partners/victron.png",
+    logo: "/images/partners/victron.svg",
   },
   {
     name: "Palmex",
-    logo: "/images/partners/palmex.png",
+    logo: "/images/partners/palmex.svg",
   },
 ] as const;
 
@@ -225,6 +229,9 @@ export const WHY_CHOOSE_US = [
   "Projetos personalizados",
   "Baixo impacto ambiental",
 ];
+
+export const BYD_PRODUCT_IMAGE = "/images/partners/byd-battery-box.png";
+export const VICTRON_PRODUCT_IMAGE = "/images/partners/victron-energy.png";
 
 export const PROJECTS: ProjectItem[] = [
   {
@@ -245,7 +252,7 @@ export const PROJECTS: ProjectItem[] = [
     id: "3",
     title: "BYD Battery-Box",
     category: "Baterias",
-    image: "/images/projects/byd-baterias.png",
+    image: BYD_PRODUCT_IMAGE,
   },
   {
     id: "4",
@@ -315,5 +322,52 @@ export const SOCIAL_LINKS = [
     label: "WhatsApp",
     href: `https://wa.me/${CONTACT.whatsapp}`,
     icon: "MessageCircle",
+  },
+];
+
+export const CATALOG_ITEMS: CatalogItem[] = [
+  {
+    id: "byd-battery-box",
+    title: "BYD Battery-Box Premium",
+    description: "Armazenamento de lítio modular para sistemas residenciais e comerciais.",
+    category: "BYD",
+    image: BYD_PRODUCT_IMAGE,
+  },
+  {
+    id: "victron-multiplus",
+    title: "Victron MultiPlus Inverter",
+    description: "Inversor/carregador compacto para sistemas off-grid e híbridos.",
+    category: "Victron",
+    image: VICTRON_PRODUCT_IMAGE,
+  },
+  {
+    id: "kit-residencial",
+    title: "Kit Solar Residencial 5kW",
+    description: "Kit completo com painéis, inversor e estrutura de montagem.",
+    category: "Kits Solares",
+    image:
+      "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1000&q=80",
+  },
+  {
+    id: "victron-mppt",
+    title: "Victron SmartSolar MPPT",
+    description: "Controlador de carga inteligente com monitorização remota.",
+    category: "Victron",
+    image: VICTRON_PRODUCT_IMAGE,
+  },
+  {
+    id: "byd-commercial",
+    title: "BYD Comercial HV",
+    description: "Solução de baterias de alta tensão para operações comerciais.",
+    category: "BYD",
+    image: BYD_PRODUCT_IMAGE,
+  },
+  {
+    id: "acessorios-cabos",
+    title: "Acessórios e Cabos DC",
+    description: "Componentes certificados para instalação segura e duradoura.",
+    category: "Acessórios",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=80",
   },
 ];

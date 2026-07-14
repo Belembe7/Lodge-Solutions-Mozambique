@@ -6,7 +6,7 @@ import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import { useTranslation } from "@/i18n/LanguageProvider";
-import { PROJECTS } from "@/lib/constants";
+import { BYD_PRODUCT_IMAGE, PROJECTS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import type { ProjectItem } from "@/types";
 
@@ -99,14 +99,19 @@ function ProjectCard({
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.35 }}
-      className="group relative aspect-[4/3] overflow-hidden rounded-3xl"
+      className={cn(
+        "group relative aspect-[4/3] overflow-hidden rounded-3xl",
+        project.image === BYD_PRODUCT_IMAGE && "bg-black",
+      )}
     >
-      {/* TODO: substituir por imagem real do cliente */}
       <Image
         src={project.image}
         alt={title}
         fill
-        className="object-cover transition-transform duration-500 group-hover:scale-110"
+        className={cn(
+          "transition-transform duration-500 group-hover:scale-110",
+          project.image === BYD_PRODUCT_IMAGE ? "object-contain" : "object-cover",
+        )}
         sizes="(max-width: 768px) 100vw, 33vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/90 via-brown-dark/20 to-transparent opacity-80 transition-opacity group-hover:opacity-95" />

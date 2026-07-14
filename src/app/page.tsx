@@ -1,17 +1,16 @@
 import {
   AboutSection,
+  BydSection,
+  CatalogSection,
   ContactSection,
-  FaqSection,
+  EpcSection,
   Footer,
   Header,
   Hero,
-  HowItWorksSection,
-  PartnersSection,
   ProjectsSection,
-  ServicesSection,
-  SolutionsSection,
+  SolarSolutionsSection,
   StatsSection,
-  WhyChooseUsSection,
+  VictronSection,
 } from "@/sections";
 
 export default function HomePage() {
@@ -22,13 +21,12 @@ export default function HomePage() {
         <Hero />
         <StatsSection />
         <AboutSection />
-        <ServicesSection />
-        <SolutionsSection />
-        <HowItWorksSection />
-        <PartnersSection />
-        <WhyChooseUsSection />
+        <SolarSolutionsSection />
+        <EpcSection />
+        <BydSection />
+        <VictronSection />
+        <CatalogSection />
         <ProjectsSection />
-        <FaqSection />
         <ContactSection />
       </main>
       <Footer />
