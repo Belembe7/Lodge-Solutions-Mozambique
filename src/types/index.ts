@@ -23,6 +23,7 @@ export type SectorSolution = {
   href: string;
   // TODO: substituir por imagem real do cliente
   image: string;
+  imageContain?: boolean;
 };
 
 export type ProjectItem = {

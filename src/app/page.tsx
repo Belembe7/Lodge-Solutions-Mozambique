@@ -29,7 +29,6 @@ export default function HomePage() {
         <PartnersSection />
         <SectionDivider from="white" to="white" className="h-6" />
         <ContactSection />
-        <SectionDivider from="white" to="dark" />
       </main>
       <Footer />
     </>

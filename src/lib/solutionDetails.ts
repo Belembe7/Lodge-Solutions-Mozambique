@@ -18,6 +18,42 @@ export type SolutionDetail = {
 
 export const SOLUTION_DETAILS: SolutionDetail[] = [
   {
+    slug: "energia-solar",
+    eyebrow: "Soluções Completas",
+    title: "Energia solar",
+    intro:
+      "Projetamos, fornecemos e implementamos soluções completas de energia solar para residências, hotéis e indústrias. Da análise inicial à monitorização contínua, entregamos sistemas fiáveis adaptados a cada contexto em Moçambique.",
+    image: "/images/solutions/energia-solar.png",
+    blocks: [
+      {
+        title: "O que incluímos",
+        items: [
+          "Estudo energético e dimensionamento",
+          "Fornecimento de painéis e inversores",
+          "Integração com armazenamento (BYD)",
+          "Instalação e comissionamento",
+          "Monitorização e manutenção",
+        ],
+      },
+      {
+        title: "Aplicações",
+        items: [
+          "Residências e condominios",
+          "Hotéis e lodges",
+          "Indústria e comércio",
+          "Projetos off grid e híbridos",
+        ],
+      },
+    ],
+    benefitsTitle: "Benefícios",
+    benefits: [
+      "Redução da fatura energética",
+      "Autonomia em redes instáveis",
+      "Soluções à medida do consumo",
+      "Suporte técnico local",
+    ],
+  },
+  {
     slug: "epc",
     eyebrow: "Soluções EPC para Energia Solar",
     title: "Engineering, Procurement & Construction (EPC)",

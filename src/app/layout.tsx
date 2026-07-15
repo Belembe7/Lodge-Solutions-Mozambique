@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Fraunces, Inter, Outfit } from "next/font/google";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
@@ -14,6 +14,13 @@ const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
   weight: ["600", "700"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-voice",
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -77,7 +84,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt" className={`${inter.variable} ${outfit.variable} h-full`}>
+    <html
+      lang="pt"
+      className={`${inter.variable} ${outfit.variable} ${fraunces.variable} h-full`}
+    >
       <body className="min-h-full bg-white font-sans text-dark-gray antialiased">
         <Providers>{children}</Providers>
       </body>

@@ -34,14 +34,14 @@ export const zh: Dictionary = fromEnglish(en, {
     { label: "技术支持" },
   ],
   about: {
-    eyebrow: "关于我们",
-    title: "莫桑比克工程服务清洁能源",
+    eyebrow: "",
+    title: "关于我们",
     description:
       "LSM Lodge Solutions Mozambique 专注于太阳能、工程与可持续建筑，提供可靠、定制且持久的解决方案。",
     highlights: ["工程", "太阳能", "可持续建筑", "完整方案"],
   },
   solutions: {
-    eyebrow: "太阳能解决方案",
+    eyebrow: "",
     title: "为每个行业匹配合适能源",
     sectors: [
       {
@@ -180,14 +180,14 @@ export const ar: Dictionary = fromEnglish(en, {
     { label: "دعم فني" },
   ],
   about: {
-    eyebrow: "من نحن",
-    title: "هندسة موزمبيقية لخدمة الطاقة النظيفة",
+    eyebrow: "",
+    title: "من نحن",
     description:
       "تتخصص LSM Lodge Solutions Mozambique في الطاقة الشمسية والهندسة والبناء المستدام، لتقديم حلول موثوقة ومخصصة وطويلة الأمد.",
     highlights: ["هندسة", "طاقة شمسية", "بناء مستدام", "حلول متكاملة"],
   },
   solutions: {
-    eyebrow: "حلول الطاقة الشمسية",
+    eyebrow: "",
     title: "الطاقة المناسبة لكل قطاع",
   },
   epc: {
@@ -275,12 +275,12 @@ export const ru: Dictionary = fromEnglish(en, {
     { label: "Техподдержка" },
   ],
   about: {
-    eyebrow: "О нас",
-    title: "Мозамбикская инженерия на службе чистой энергии",
+    eyebrow: "",
+    title: "О нас",
     highlights: ["Инженерия", "Солнечная энергия", "Устойчивое строительство", "Полные решения"],
   },
   solutions: {
-    eyebrow: "Солнечные решения",
+    eyebrow: "",
     title: "Подходящая энергия для каждого сектора",
   },
   epc: {
@@ -368,12 +368,12 @@ export const ja: Dictionary = fromEnglish(en, {
     { label: "テクニカルサポート" },
   ],
   about: {
-    eyebrow: "私たちについて",
-    title: "クリーンエネルギーのためのモザンビーク工学",
+    eyebrow: "",
+    title: "私たちについて",
     highlights: ["エンジニアリング", "太陽光エネルギー", "持続可能な建設", "ワンストップソリューション"],
   },
   solutions: {
-    eyebrow: "太陽光エネルギーソリューション",
+    eyebrow: "",
     title: "あらゆる分野に最適なエネルギー",
   },
   epc: {

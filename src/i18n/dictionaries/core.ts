@@ -167,14 +167,14 @@ export const pt: Dictionary = {
     { label: "Suporte Técnico" },
   ],
   about: {
-    eyebrow: "Quem Somos",
-    title: "Engenharia moçambicana ao serviço da energia limpa",
+    eyebrow: "",
+    title: "Quem Somos",
     description:
       "A LSM desenvolve e implementa soluções de engenharia para os setores da energia, construção e infraestruturas sustentáveis em Moçambique. Atuamos como parceiro EPC (Engineering, Procurement and Construction), entregando projetos completos desde o planeamento e engenharia até à implementação e manutenção.\n\nEspecializamo-nos em ambientes remotos e ambientalmente sensíveis, combinando inovação, qualidade técnica e práticas de baixo impacto para criar soluções duráveis, eficientes e adaptadas às necessidades de cada cliente.",
     highlights: ["Engenharia", "Energia Solar", "Construção Sustentável", "Soluções Completas"],
   },
   solutions: {
-    eyebrow: "Soluções de Energia Solar",
+    eyebrow: "",
     title: "Energia certa para cada sector",
     description:
       "Desenvolvemos soluções integradas de engenharia que combinam energia, construção sustentável e tecnologias avançadas para criar projetos eficientes, resilientes e adaptados às necessidades de Moçambique.",
@@ -347,14 +347,14 @@ export const en: Dictionary = {
     { label: "Technical Support" },
   ],
   about: {
-    eyebrow: "Who We Are",
-    title: "Mozambican engineering for clean energy",
+    eyebrow: "",
+    title: "Who We Are",
     description:
       "LSM Lodge Solutions Mozambique specializes in solar energy, engineering and sustainable construction. We combine technical expertise and environmental commitment to deliver reliable, tailored and lasting solutions.",
     highlights: ["Engineering", "Solar Energy", "Sustainable Construction", "Complete Solutions"],
   },
   solutions: {
-    eyebrow: "Solar Energy Solutions",
+    eyebrow: "",
     title: "The right energy for every sector",
     description:
       "From the EPC model to BYD and Victron partners, integrated solutions for energy autonomy in Mozambique.",
@@ -556,14 +556,14 @@ export const fr: Dictionary = {
     { label: "Support technique" },
   ],
   about: {
-    eyebrow: "Qui sommes-nous",
-    title: "L’ingénierie mozambicaine au service de l’énergie propre",
+    eyebrow: "",
+    title: "Qui sommes-nous",
     description:
       "LSM Lodge Solutions Mozambique est spécialisée dans l’énergie solaire, l’ingénierie et la construction durable. Nous offrons des solutions fiables, sur mesure et durables.",
     highlights: ["Ingénierie", "Énergie solaire", "Construction durable", "Solutions complètes"],
   },
   solutions: {
-    eyebrow: "Solutions d’énergie solaire",
+    eyebrow: "",
     title: "La bonne énergie pour chaque secteur",
     description:
       "Du modèle EPC aux partenaires BYD et Victron, des solutions intégrées pour l’autonomie énergétique au Mozambique.",

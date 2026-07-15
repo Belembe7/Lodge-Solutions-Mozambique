@@ -130,6 +130,7 @@ export const SECTOR_SOLUTIONS: SectorSolution[] = [
       "Inversores e controladores Victron Energy para sistemas off grid e híbridos.",
     href: "/solucoes/victron",
     image: "/images/partners/victron-energy.png",
+    imageContain: true,
   },
   {
     id: "technical-support",

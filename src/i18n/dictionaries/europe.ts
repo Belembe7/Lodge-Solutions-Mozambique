@@ -35,14 +35,14 @@ export const es: Dictionary = fromEnglish(en, {
     { label: "Soporte técnico" },
   ],
   about: {
-    eyebrow: "Quiénes somos",
-    title: "Ingeniería mozambicana al servicio de la energía limpia",
+    eyebrow: "",
+    title: "Quiénes somos",
     description:
       "LSM Lodge Solutions Mozambique se especializa en energía solar, ingeniería y construcción sostenible. Ofrecemos soluciones fiables, a medida y duraderas.",
     highlights: ["Ingeniería", "Energía solar", "Construcción sostenible", "Soluciones completas"],
   },
   solutions: {
-    eyebrow: "Soluciones de energía solar",
+    eyebrow: "",
     title: "La energía adecuada para cada sector",
     description:
       "Del modelo EPC a los socios BYD y Victron, soluciones integradas para la autonomía energética en Mozambique.",
@@ -233,14 +233,14 @@ export const de: Dictionary = fromEnglish(en, {
     { label: "Technischer Support" },
   ],
   about: {
-    eyebrow: "Wer wir sind",
-    title: "Mosambikanische Technik für saubere Energie",
+    eyebrow: "",
+    title: "Wer wir sind",
     description:
       "LSM Lodge Solutions Mozambique ist auf Solarenergie, Engineering und nachhaltiges Bauen spezialisiert. Wir liefern zuverlässige, maßgeschneiderte und langlebige Lösungen.",
     highlights: ["Engineering", "Solarenergie", "Nachhaltiges Bauen", "Komplettlösungen"],
   },
   solutions: {
-    eyebrow: "Solarenergielösungen",
+    eyebrow: "",
     title: "Die richtige Energie für jeden Sektor",
     sectors: [
       {
@@ -388,14 +388,14 @@ export const it: Dictionary = fromEnglish(en, {
     { label: "Supporto tecnico" },
   ],
   about: {
-    eyebrow: "Chi siamo",
-    title: "Ingegneria mozambicana al servizio dell’energia pulita",
+    eyebrow: "",
+    title: "Chi siamo",
     description:
       "LSM Lodge Solutions Mozambique è specializzata in energia solare, ingegneria e costruzione sostenibile. Offriamo soluzioni affidabili, su misura e durature.",
     highlights: ["Ingegneria", "Energia solare", "Costruzione sostenibile", "Soluzioni complete"],
   },
   solutions: {
-    eyebrow: "Soluzioni di energia solare",
+    eyebrow: "",
     title: "L’energia giusta per ogni settore",
     sectors: [
       {
