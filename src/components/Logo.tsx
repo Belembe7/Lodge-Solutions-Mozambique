@@ -9,9 +9,17 @@ type LogoProps = {
 };
 
 const sizes = {
-  sm: { width: 200, height: 80, className: "h-14 w-auto sm:h-16" },
-  md: { width: 280, height: 112, className: "h-[4.25rem] w-auto sm:h-20 lg:h-[5.25rem]" },
-  lg: { width: 360, height: 144, className: "h-20 w-auto sm:h-24 lg:h-28" },
+  sm: { width: 220, height: 88, className: "h-16 w-auto sm:h-[4.5rem]" },
+  md: {
+    width: 320,
+    height: 128,
+    className: "h-[5rem] w-auto sm:h-24 lg:h-[6.5rem]",
+  },
+  lg: {
+    width: 400,
+    height: 160,
+    className: "h-24 w-auto sm:h-28 lg:h-32",
+  },
 };
 
 /**

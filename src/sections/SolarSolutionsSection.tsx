@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -19,38 +20,41 @@ export function SolarSolutionsSection() {
           description={t.solutions.description}
         />
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 sm:grid-cols-2">
           {SECTOR_SOLUTIONS.map((sector, index) => {
             const copy = t.solutions.sectors[index];
+
             return (
-              <motion.article
+              <motion.div
                 key={sector.id}
-                id={sector.id}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: index * 0.06 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
                 whileHover={{ y: -4 }}
-                className="group relative h-64 overflow-hidden rounded-3xl sm:h-72"
               >
-                {/* TODO: substituir por imagem real do cliente */}
-                <Image
-                  src={sector.image}
-                  alt={copy.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/95 via-brown-dark/45 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                  <h3 className="font-display text-xl font-semibold text-white sm:text-2xl">
-                    {copy.title}
-                  </h3>
-                  <p className="mt-2 max-h-0 overflow-hidden text-sm leading-relaxed text-white/85 opacity-0 transition-all duration-300 group-hover:max-h-24 group-hover:opacity-100">
-                    {copy.description}
-                  </p>
-                </div>
-              </motion.article>
+                <Link
+                  href={sector.href}
+                  className="group relative flex h-72 overflow-hidden rounded-3xl sm:h-80"
+                >
+                  <Image
+                    src={sector.image}
+                    alt={copy.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-brown-dark/80 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                    <h3 className="font-display text-lg font-semibold text-white sm:text-xl">
+                      {copy.title}
+                    </h3>
+                    <p className="mt-2 max-h-0 overflow-hidden text-sm leading-relaxed text-white/90 opacity-0 transition-all duration-300 group-hover:max-h-28 group-hover:opacity-100">
+                      {copy.description}
+                    </p>
+                  </div>
+                </Link>
+              </motion.div>
             );
           })}
         </div>

@@ -27,50 +27,35 @@ export const NAV_LINKS: NavItem[] = [
   { label: "Início", href: "#inicio" },
   { label: "Quem Somos", href: "#sobre" },
   { label: "Soluções", href: "#solucoes" },
-  { label: "Modelo EPC", href: "#epc" },
-  { label: "BYD", href: "#byd" },
-  { label: "Victron", href: "#victron" },
   { label: "Catálogo", href: "#catalogo" },
-  { label: "Projectos", href: "#projetos" },
+  { label: "Projetos", href: "#projetos" },
   { label: "Contactos", href: "#contacto" },
 ];
 
 export const SOLUTION_MENU: SolutionMenuItem[] = [
   {
-    title: "Residencial",
-    description: "Autonomia energética para casas e condomínios",
-    href: "#residencial",
-    icon: "Home",
-  },
-  {
-    title: "Comercial",
-    description: "Soluções escaláveis para negócios",
-    href: "#comercial",
+    title: "Modelo EPC",
+    description: "Engineering, Procurement & Construction",
+    href: "/solucoes/epc",
     icon: "Building2",
   },
   {
-    title: "Industrial",
-    description: "Sistemas robustos de alta demanda",
-    href: "#industrial",
-    icon: "Zap",
-  },
-  {
-    title: "Turismo",
-    description: "Energia fiável para lodges e resorts",
-    href: "#turismo",
-    icon: "Sun",
-  },
-  {
-    title: "Hospitais",
-    description: "Continuidade crítica com backup solar",
-    href: "#hospitais",
+    title: "BYD em Moçambique",
+    description: "Baterias de lítio e suporte local",
+    href: "/solucoes/byd",
     icon: "BatteryCharging",
   },
   {
-    title: "ONGs",
-    description: "Projectos sociais de impacto positivo",
-    href: "#ongs",
-    icon: "Droplets",
+    title: "Victron Supplier",
+    description: "Equipamentos Victron Energy",
+    href: "/solucoes/victron",
+    icon: "Zap",
+  },
+  {
+    title: "Technical Support",
+    description: "Assistência técnica especializada",
+    href: "/solucoes/technical-support",
+    icon: "Sun",
   },
 ];
 
@@ -123,58 +108,36 @@ export const SERVICES: ServiceItem[] = [
 
 export const SECTOR_SOLUTIONS: SectorSolution[] = [
   {
-    id: "residencial",
-    title: "Residencial",
+    id: "epc",
+    title: "Modelo EPC (Engineering, Procurement & Construction)",
     description:
-      "Autonomia energética e redução de custos para casas e condomínios.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+      "Do projeto à construção turnkey — engenharia, procurement e instalação com responsabilidade única.",
+    href: "/solucoes/epc",
+    image: "/images/solutions/modelo-epc.png",
   },
   {
-    id: "comercial",
-    title: "Comercial",
+    id: "byd",
+    title: "BYD em Moçambique",
     description:
-      "Soluções escaláveis para escritórios, lojas e centros de negócio.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "Baterias de lítio de referência mundial, com stock e suporte técnico local.",
+    href: "/solucoes/byd",
+    image: "/images/partners/byd-battery-box.png",
   },
   {
-    id: "industrial",
-    title: "Industrial",
+    id: "victron",
+    title: "Victron Supplier",
     description:
-      "Sistemas robustos para fábrica, armazém e operações de alta demanda.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+      "Inversores e controladores Victron Energy para sistemas off-grid e híbridos.",
+    href: "/solucoes/victron",
+    image: "/images/partners/victron-energy.png",
   },
   {
-    id: "turismo",
-    title: "Turismo",
+    id: "technical-support",
+    title: "Technical Support",
     description:
-      "Energia fiável e sustentável para lodges, resorts e eco-turismo.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "hospitais",
-    title: "Hospitais",
-    description:
-      "Continuidade de serviço crítico com backup solar e baterias.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    id: "ongs",
-    title: "ONGs",
-    description:
-      "Projetos sociais e comunitários com impacto ambiental positivo.",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80",
+      "Assistência técnica especializada, manutenção e suporte contínuo para os seus sistemas.",
+    href: "/solucoes/technical-support",
+    image: "/images/solutions/technical-support.png",
   },
 ];
 
@@ -238,15 +201,13 @@ export const PROJECTS: ProjectItem[] = [
     id: "1",
     title: "Instalação Solar Residencial — Inhambane",
     category: "Solar",
-    image: "/images/projects/solar-instalacao.png",
+    image: "/images/projects/instalacao-solar-residencial.png",
   },
   {
     id: "2",
     title: "Lodge Eco — Inhambane",
     category: "Lodges",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/projects/lodge-eco.png",
   },
   {
     id: "3",
@@ -258,9 +219,7 @@ export const PROJECTS: ProjectItem[] = [
     id: "4",
     title: "Edifício Sustentável — Inhambane",
     category: "Construção",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/projects/edificio-sustentavel.png",
   },
   {
     id: "5",
@@ -274,9 +233,7 @@ export const PROJECTS: ProjectItem[] = [
     id: "6",
     title: "Resort Costeiro — Inhambane",
     category: "Lodges",
-    // TODO: substituir por imagem real do cliente
-    image:
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80",
+    image: "/images/projects/resort-costeiro.png",
   },
 ];
 

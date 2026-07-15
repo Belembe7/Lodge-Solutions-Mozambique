@@ -114,12 +114,7 @@ function CatalogCard({
       transition={{ duration: 0.35 }}
       className="group overflow-hidden rounded-3xl border border-brown-primary/10 bg-white shadow-sm transition-shadow hover:shadow-md"
     >
-      <div
-        className={cn(
-          "relative aspect-[16/10] overflow-hidden",
-          (item.category === "BYD" || item.category === "Victron") && "bg-black",
-        )}
-      >
+      <div className="relative aspect-[16/10] overflow-hidden bg-[#F5F2EB]">
         <Image
           src={item.image}
           alt={title}
@@ -127,7 +122,7 @@ function CatalogCard({
           className={cn(
             "transition-transform duration-500 group-hover:scale-105",
             item.category === "BYD" || item.category === "Victron"
-              ? "object-contain"
+              ? "object-contain p-4"
               : "object-cover",
           )}
           sizes="(max-width: 768px) 100vw, 33vw"

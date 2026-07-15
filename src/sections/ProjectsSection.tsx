@@ -101,7 +101,7 @@ function ProjectCard({
       transition={{ duration: 0.35 }}
       className={cn(
         "group relative aspect-[4/3] overflow-hidden rounded-3xl",
-        project.image === BYD_PRODUCT_IMAGE && "bg-black",
+        project.image === BYD_PRODUCT_IMAGE && "bg-[#F5F2EB]",
       )}
     >
       <Image
@@ -110,7 +110,9 @@ function ProjectCard({
         fill
         className={cn(
           "transition-transform duration-500 group-hover:scale-110",
-          project.image === BYD_PRODUCT_IMAGE ? "object-contain" : "object-cover",
+          project.image === BYD_PRODUCT_IMAGE
+            ? "object-contain p-4"
+            : "object-cover",
         )}
         sizes="(max-width: 768px) 100vw, 33vw"
       />

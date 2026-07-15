@@ -16,12 +16,10 @@ export const zh: Dictionary = fromEnglish(en, {
     requestQuote: "获取报价",
   },
   solutionsMenu: [
-    { title: "住宅", description: "住宅与公寓能源自主" },
-    { title: "商业", description: "可扩展的商业解决方案" },
-    { title: "工业", description: "高负荷稳健系统" },
-    { title: "旅游", description: "旅馆与度假村可靠供电" },
-    { title: "医院", description: "关键场景太阳能后备" },
-    { title: "非政府组织", description: "具有积极影响的社会项目" },
+    { title: "EPC 模式", description: "Engineering, Procurement & Construction" },
+    { title: "BYD 在莫桑比克", description: "锂电池与本地支持" },
+    { title: "Victron Supplier", description: "Victron 设备供应" },
+    { title: "Technical Support", description: "专业技术支持" },
   ],
   hero: {
     title: "可持续能源智能解决方案",
@@ -46,12 +44,22 @@ export const zh: Dictionary = fromEnglish(en, {
     eyebrow: "太阳能解决方案",
     title: "为每个行业匹配合适能源",
     sectors: [
-      { title: "住宅", description: "为住宅与公寓提供能源自主并降低成本。" },
-      { title: "商业", description: "为办公、商铺与商业中心提供可扩展方案。" },
-      { title: "工业", description: "为工厂、仓库与高负荷场景提供稳健系统。" },
-      { title: "旅游", description: "为旅馆与度假村提供可靠可持续电力。" },
-      { title: "医院", description: "以太阳能后备与电池保障关键电力连续。" },
-      { title: "非政府组织", description: "具有积极环境效益的社区项目。" },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description: "从设计到交钥匙交付——工程、采购与安装统一负责。",
+      },
+      {
+        title: "BYD 在莫桑比克",
+        description: "世界级锂电池，配备本地库存与技术支持。",
+      },
+      {
+        title: "Victron Supplier",
+        description: "Victron 逆变器与控制器，适用于离网与混合系统。",
+      },
+      {
+        title: "Technical Support",
+        description: "专业技术支持、维护与持续系统服务。",
+      },
     ],
   },
   epc: {
@@ -153,12 +161,10 @@ export const ar: Dictionary = fromEnglish(en, {
     requestQuote: "طلب عرض سعر",
   },
   solutionsMenu: [
-    { title: "سكني", description: "استقلالية الطاقة للمنازل والمجمعات" },
-    { title: "تجاري", description: "حلول قابلة للتوسع للأعمال" },
-    { title: "صناعي", description: "أنظمة قوية للأحمال العالية" },
-    { title: "سياحة", description: "طاقة موثوقة للنزل والمنتجعات" },
-    { title: "مستشفيات", description: "استمرارية حرجة مع دعم شمسي" },
-    { title: "منظمات غير ربحية", description: "مشاريع اجتماعية ذات أثر إيجابي" },
+    { title: "نموذج EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD في موزمبيق", description: "بطاريات ليثيوم ودعم محلي" },
+    { title: "Victron Supplier", description: "معدات Victron Energy" },
+    { title: "Technical Support", description: "دعم فني متخصص" },
   ],
   hero: {
     title: "حلول ذكية للطاقة المستدامة",
@@ -250,12 +256,10 @@ export const ru: Dictionary = fromEnglish(en, {
     requestQuote: "Запросить расчёт",
   },
   solutionsMenu: [
-    { title: "Жилой сектор", description: "Энергетическая автономия для домов" },
-    { title: "Коммерция", description: "Масштабируемые решения для бизнеса" },
-    { title: "Промышленность", description: "Надёжные системы высокой мощности" },
-    { title: "Туризм", description: "Надёжная энергия для лоджей и курортов" },
-    { title: "Больницы", description: "Критическая непрерывность с солнечным резервом" },
-    { title: "НКО", description: "Социальные проекты с позитивным эффектом" },
+    { title: "Модель EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD в Мозамбике", description: "Литиевые батареи и локальная поддержка" },
+    { title: "Victron Supplier", description: "Оборудование Victron Energy" },
+    { title: "Technical Support", description: "Специализированная техподдержка" },
   ],
   hero: {
     title: "Умные решения для устойчивой энергетики",
@@ -345,12 +349,10 @@ export const ja: Dictionary = fromEnglish(en, {
     requestQuote: "見積もりを依頼",
   },
   solutionsMenu: [
-    { title: "住宅", description: "住宅・マンション向けエネルギー自律" },
-    { title: "商業", description: "ビジネス向けスケーラブルな解決策" },
-    { title: "産業", description: "高需要向けの堅牢なシステム" },
-    { title: "観光", description: "ロッジ・リゾート向け安定電源" },
-    { title: "病院", description: "太陽光バックアップによる重要継続性" },
-    { title: "NGO", description: "社会的インパクトのあるプロジェクト" },
+    { title: "EPCモデル", description: "Engineering, Procurement & Construction" },
+    { title: "モザンビークのBYD", description: "リチウム電池と現地サポート" },
+    { title: "Victron Supplier", description: "Victron Energy機器" },
+    { title: "Technical Support", description: "専門テクニカルサポート" },
   ],
   hero: {
     title: "持続可能なエネルギーのためのスマートソリューション",

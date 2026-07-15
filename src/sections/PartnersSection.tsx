@@ -24,7 +24,7 @@ export function PartnersSection() {
           {logos.map((partner, index) => (
             <div
               key={`${partner.name}-${index}`}
-              className="flex h-24 w-56 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-black px-4 transition-all duration-300 hover:border-solar-gold/40 hover:shadow-md"
+              className="flex h-24 w-56 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-white px-4 transition-all duration-300 hover:border-brown-primary/25 hover:shadow-md"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

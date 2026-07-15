@@ -32,8 +32,8 @@ const iconMap = {
 
 const NAV_HREFS = [
   { key: "home", href: "#inicio" },
+  { key: "about", href: "#sobre" },
   { key: "solutions", href: "#solucoes" },
-  { key: "victron", href: "#victron" },
   { key: "catalog", href: "#catalogo" },
   { key: "projects", href: "#projetos" },
   { key: "contact", href: "#contacto" },

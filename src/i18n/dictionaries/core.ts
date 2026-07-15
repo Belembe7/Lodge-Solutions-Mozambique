@@ -141,24 +141,22 @@ export const pt: Dictionary = {
     byd: "BYD",
     victron: "Victron",
     catalog: "Catálogo",
-    projects: "Projectos",
+    projects: "Projetos",
     contact: "Contactos",
-    requestQuote: "Solicitar Orçamento",
+    requestQuote: "Fale Connosco",
   },
   solutionsMenu: [
-    { title: "Residencial", description: "Autonomia energética para casas e condomínios" },
-    { title: "Comercial", description: "Soluções escaláveis para negócios" },
-    { title: "Industrial", description: "Sistemas robustos de alta demanda" },
-    { title: "Turismo", description: "Energia fiável para lodges e resorts" },
-    { title: "Hospitais", description: "Continuidade crítica com backup solar" },
-    { title: "ONGs", description: "Projectos sociais de impacto positivo" },
+    { title: "Modelo EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD em Moçambique", description: "Baterias de lítio e suporte local" },
+    { title: "Victron Supplier", description: "Equipamentos Victron Energy" },
+    { title: "Technical Support", description: "Assistência técnica especializada" },
   ],
   hero: {
     eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Soluções Inteligentes para Energia Sustentável",
     subtitle:
       "Projetamos, instalamos e mantemos sistemas solares de alta performance para residências, empresas e projetos remotos.",
-    ctaQuote: "Solicitar Orçamento",
+    ctaQuote: "Fale Connosco",
     ctaExplore: "Explorar Soluções",
   },
   stats: [
@@ -178,14 +176,28 @@ export const pt: Dictionary = {
     eyebrow: "Soluções de Energia Solar",
     title: "Energia certa para cada sector",
     description:
-      "Soluções adaptadas ao contexto operacional de residências, empresas, indústria, turismo, saúde e organizações sociais.",
+      "Do modelo EPC aos parceiros BYD e Victron — soluções integradas para autonomia energética em Moçambique.",
     sectors: [
-      { title: "Residencial", description: "Autonomia energética e redução de custos para casas e condomínios." },
-      { title: "Comercial", description: "Soluções escaláveis para escritórios, lojas e centros de negócio." },
-      { title: "Industrial", description: "Sistemas robustos para fábrica, armazém e operações de alta demanda." },
-      { title: "Turismo", description: "Energia fiável e sustentável para lodges, resorts e eco-turismo." },
-      { title: "Hospitais", description: "Continuidade de serviço crítico com backup solar e baterias." },
-      { title: "ONGs", description: "Projetos sociais e comunitários com impacto ambiental positivo." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "Do projeto à construção turnkey — engenharia, procurement e instalação com responsabilidade única.",
+      },
+      {
+        title: "BYD em Moçambique",
+        description:
+          "Baterias de lítio de referência mundial, com stock e suporte técnico local.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Inversores e controladores Victron Energy para sistemas off-grid e híbridos.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Assistência técnica especializada, manutenção e suporte contínuo para os seus sistemas.",
+      },
     ],
   },
   epc: {
@@ -250,7 +262,7 @@ export const pt: Dictionary = {
     downloadCta: "Descarregar Catálogo Completo (PDF)",
   },
   projects: {
-    eyebrow: "Projectos",
+    eyebrow: "Projetos",
     title: "Portfólio de entregas em Moçambique",
     description:
       "Uma seleção de projetos solares, de construção e energia autonomizada para diferentes sectores.",
@@ -306,22 +318,20 @@ export const en: Dictionary = {
     catalog: "Catalog",
     projects: "Projects",
     contact: "Contacts",
-    requestQuote: "Request a Quote",
+    requestQuote: "Talk to Us",
   },
   solutionsMenu: [
-    { title: "Residential", description: "Energy autonomy for homes and condominiums" },
-    { title: "Commercial", description: "Scalable solutions for business" },
-    { title: "Industrial", description: "Robust high-demand systems" },
-    { title: "Tourism", description: "Reliable power for lodges and resorts" },
-    { title: "Hospitals", description: "Critical continuity with solar backup" },
-    { title: "NGOs", description: "Social projects with positive impact" },
+    { title: "EPC Model", description: "Engineering, Procurement & Construction" },
+    { title: "BYD in Mozambique", description: "Lithium batteries and local support" },
+    { title: "Victron Supplier", description: "Victron Energy equipment" },
+    { title: "Technical Support", description: "Specialized technical assistance" },
   ],
   hero: {
     eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Smart Solutions for Sustainable Energy",
     subtitle:
       "We design, install and maintain high-performance solar systems for homes, businesses and remote projects.",
-    ctaQuote: "Request a Quote",
+    ctaQuote: "Talk to Us",
     ctaExplore: "Explore Solutions",
   },
   stats: [
@@ -341,14 +351,28 @@ export const en: Dictionary = {
     eyebrow: "Solar Energy Solutions",
     title: "The right energy for every sector",
     description:
-      "Solutions tailored to homes, businesses, industry, tourism, healthcare and social organizations.",
+      "From the EPC model to BYD and Victron partners — integrated solutions for energy autonomy in Mozambique.",
     sectors: [
-      { title: "Residential", description: "Energy autonomy and cost savings for homes and condominiums." },
-      { title: "Commercial", description: "Scalable solutions for offices, shops and business centers." },
-      { title: "Industrial", description: "Robust systems for factories, warehouses and high-demand operations." },
-      { title: "Tourism", description: "Reliable sustainable power for lodges, resorts and eco-tourism." },
-      { title: "Hospitals", description: "Critical continuity with solar backup and batteries." },
-      { title: "NGOs", description: "Community projects with positive environmental impact." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "From design to turnkey construction — engineering, procurement and installation with single-point accountability.",
+      },
+      {
+        title: "BYD in Mozambique",
+        description:
+          "World-class lithium batteries with local stock and technical support.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Victron Energy inverters and controllers for off-grid and hybrid systems.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Specialized technical assistance, maintenance and ongoing support for your systems.",
+      },
     ],
   },
   epc: {
@@ -498,22 +522,20 @@ export const fr: Dictionary = {
     catalog: "Catalogue",
     projects: "Projets",
     contact: "Contacts",
-    requestQuote: "Demander un devis",
+    requestQuote: "Parlons-en",
   },
   solutionsMenu: [
-    { title: "Résidentiel", description: "Autonomie énergétique pour maisons et copropriétés" },
-    { title: "Commercial", description: "Solutions évolutives pour les entreprises" },
-    { title: "Industriel", description: "Systèmes robustes à forte demande" },
-    { title: "Tourisme", description: "Énergie fiable pour lodges et resorts" },
-    { title: "Hôpitaux", description: "Continuité critique avec secours solaire" },
-    { title: "ONG", description: "Projets sociaux à impact positif" },
+    { title: "Modèle EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD au Mozambique", description: "Batteries lithium et support local" },
+    { title: "Victron Supplier", description: "Équipements Victron Energy" },
+    { title: "Technical Support", description: "Assistance technique spécialisée" },
   ],
   hero: {
     eyebrow: "LSM · Lodge Solutions Mozambique",
     title: "Solutions intelligentes pour une énergie durable",
     subtitle:
       "Nous concevons, installons et maintenons des systèmes solaires haute performance pour logements, entreprises et projets isolés.",
-    ctaQuote: "Demander un devis",
+    ctaQuote: "Parlons-en",
     ctaExplore: "Explorer les solutions",
   },
   stats: [
@@ -533,14 +555,28 @@ export const fr: Dictionary = {
     eyebrow: "Solutions d’énergie solaire",
     title: "La bonne énergie pour chaque secteur",
     description:
-      "Des solutions adaptées aux logements, entreprises, industrie, tourisme, santé et ONG.",
+      "Du modèle EPC aux partenaires BYD et Victron — des solutions intégrées pour l’autonomie énergétique au Mozambique.",
     sectors: [
-      { title: "Résidentiel", description: "Autonomie énergétique et réduction des coûts pour maisons et copropriétés." },
-      { title: "Commercial", description: "Solutions évolutives pour bureaux, commerces et centres d’affaires." },
-      { title: "Industriel", description: "Systèmes robustes pour usines, entrepôts et fortes demandes." },
-      { title: "Tourisme", description: "Énergie fiable et durable pour lodges, resorts et écotourisme." },
-      { title: "Hôpitaux", description: "Continuité critique avec secours solaire et batteries." },
-      { title: "ONG", description: "Projets sociaux à impact environnemental positif." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "De la conception à la construction clé en main — ingénierie, procurement et installation avec responsabilité unique.",
+      },
+      {
+        title: "BYD au Mozambique",
+        description:
+          "Batteries lithium de référence mondiale, avec stock et support technique local.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Onduleurs et régulateurs Victron Energy pour systèmes hors réseau et hybrides.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Assistance technique spécialisée, maintenance et support continu pour vos systèmes.",
+      },
     ],
   },
   epc: {

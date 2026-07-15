@@ -1,11 +1,7 @@
 export { Header } from "./Header";
 export { Hero } from "./Hero";
-export { StatsSection } from "./StatsSection";
 export { AboutSection } from "./AboutSection";
 export { SolarSolutionsSection } from "./SolarSolutionsSection";
-export { EpcSection } from "./EpcSection";
-export { BydSection } from "./BydSection";
-export { VictronSection } from "./VictronSection";
 export { CatalogSection } from "./CatalogSection";
 export { ProjectsSection } from "./ProjectsSection";
 export { PartnersSection } from "./PartnersSection";

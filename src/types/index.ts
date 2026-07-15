@@ -20,6 +20,7 @@ export type SectorSolution = {
   id: string;
   title: string;
   description: string;
+  href: string;
   // TODO: substituir por imagem real do cliente
   image: string;
 };

@@ -20,11 +20,9 @@ const socialIcons = {
 } as const;
 
 const QUICK_LINKS = [
+  { key: "home" as const, href: "#inicio" },
   { key: "about" as const, href: "#sobre" },
   { key: "solutions" as const, href: "#solucoes" },
-  { key: "epc" as const, href: "#epc" },
-  { key: "byd" as const, href: "#byd" },
-  { key: "victron" as const, href: "#victron" },
   { key: "catalog" as const, href: "#catalogo" },
   { key: "projects" as const, href: "#projetos" },
   { key: "contact" as const, href: "#contacto" },

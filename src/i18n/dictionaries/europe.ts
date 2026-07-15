@@ -13,15 +13,13 @@ export const es: Dictionary = fromEnglish(en, {
     catalog: "Catálogo",
     projects: "Proyectos",
     contact: "Contactos",
-    requestQuote: "Solicitar presupuesto",
+    requestQuote: "Hable con nosotros",
   },
   solutionsMenu: [
-    { title: "Residencial", description: "Autonomía energética para casas y condominios" },
-    { title: "Comercial", description: "Soluciones escalables para negocios" },
-    { title: "Industrial", description: "Sistemas robustos de alta demanda" },
-    { title: "Turismo", description: "Energía fiable para lodges y resorts" },
-    { title: "Hospitales", description: "Continuidad crítica con respaldo solar" },
-    { title: "ONG", description: "Proyectos sociales de impacto positivo" },
+    { title: "Modelo EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD en Mozambique", description: "Baterías de litio y soporte local" },
+    { title: "Victron Supplier", description: "Equipos Victron Energy" },
+    { title: "Technical Support", description: "Asistencia técnica especializada" },
   ],
   hero: {
     title: "Soluciones inteligentes para energía sostenible",
@@ -47,14 +45,28 @@ export const es: Dictionary = fromEnglish(en, {
     eyebrow: "Soluciones de energía solar",
     title: "La energía adecuada para cada sector",
     description:
-      "Soluciones adaptadas a hogares, empresas, industria, turismo, salud y ONG.",
+      "Del modelo EPC a los socios BYD y Victron — soluciones integradas para la autonomía energética en Mozambique.",
     sectors: [
-      { title: "Residencial", description: "Autonomía energética y ahorro para casas y condominios." },
-      { title: "Comercial", description: "Soluciones escalables para oficinas, tiendas y centros de negocio." },
-      { title: "Industrial", description: "Sistemas robustos para fábricas, almacenes y alta demanda." },
-      { title: "Turismo", description: "Energía fiable y sostenible para lodges, resorts y ecoturismo." },
-      { title: "Hospitales", description: "Continuidad crítica con respaldo solar y baterías." },
-      { title: "ONG", description: "Proyectos comunitarios con impacto ambiental positivo." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "Del diseño a la construcción llave en mano — ingeniería, procurement e instalación con responsabilidad única.",
+      },
+      {
+        title: "BYD en Mozambique",
+        description:
+          "Baterías de litio de referencia mundial, con stock y soporte técnico local.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Inversores y controladores Victron Energy para sistemas off-grid e híbridos.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Asistencia técnica especializada, mantenimiento y soporte continuo para sus sistemas.",
+      },
     ],
   },
   epc: {
@@ -202,12 +214,10 @@ export const de: Dictionary = fromEnglish(en, {
     requestQuote: "Angebot anfordern",
   },
   solutionsMenu: [
-    { title: "Wohnbereich", description: "Energieautonomie für Häuser und Anlagen" },
-    { title: "Gewerbe", description: "Skalierbare Lösungen für Unternehmen" },
-    { title: "Industrie", description: "Robuste Systeme für hohen Bedarf" },
-    { title: "Tourismus", description: "Zuverlässige Energie für Lodges und Resorts" },
-    { title: "Krankenhäuser", description: "Kritische Versorgungssicherheit mit Solar" },
-    { title: "NGOs", description: "Soziale Projekte mit positivem Impact" },
+    { title: "EPC-Modell", description: "Engineering, Procurement & Construction" },
+    { title: "BYD in Mosambik", description: "Lithiumbatterien und lokaler Support" },
+    { title: "Victron Supplier", description: "Victron-Energy-Geräte" },
+    { title: "Technical Support", description: "Spezialisierte technische Unterstützung" },
   ],
   hero: {
     title: "Intelligente Lösungen für nachhaltige Energie",
@@ -233,12 +243,26 @@ export const de: Dictionary = fromEnglish(en, {
     eyebrow: "Solarenergielösungen",
     title: "Die richtige Energie für jeden Sektor",
     sectors: [
-      { title: "Wohnbereich", description: "Energieautonomie und Kostensenkung für Häuser und Anlagen." },
-      { title: "Gewerbe", description: "Skalierbare Lösungen für Büros, Ladenlokale und Businesszentren." },
-      { title: "Industrie", description: "Robuste Systeme für Fabriken, Lager und hohen Bedarf." },
-      { title: "Tourismus", description: "Zuverlässige nachhaltige Energie für Lodges und Resorts." },
-      { title: "Krankenhäuser", description: "Kritische Versorgungssicherheit mit Solar und Batterien." },
-      { title: "NGOs", description: "Gemeinschaftsprojekte mit positivem Umweltbeitrag." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "Vom Design bis zur schlüsselfertigen Übergabe — Engineering, Procurement und Installation aus einer Hand.",
+      },
+      {
+        title: "BYD in Mosambik",
+        description:
+          "Lithiumbatterien von Weltniveau mit lokalem Lager und Support.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Victron-Wechselrichter und Laderegler für Off-Grid- und Hybridsysteme.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Spezialisierte technische Unterstützung, Wartung und laufender Support für Ihre Systeme.",
+      },
     ],
   },
   epc: {
@@ -345,12 +369,10 @@ export const it: Dictionary = fromEnglish(en, {
     requestQuote: "Richiedi preventivo",
   },
   solutionsMenu: [
-    { title: "Residenziale", description: "Autonomia energetica per case e condomini" },
-    { title: "Commerciale", description: "Soluzioni scalabili per le imprese" },
-    { title: "Industriale", description: "Sistemi robusti ad alta domanda" },
-    { title: "Turismo", description: "Energia affidabile per lodge e resort" },
-    { title: "Ospedali", description: "Continuità critica con backup solare" },
-    { title: "ONG", description: "Progetti sociali ad impatto positivo" },
+    { title: "Modello EPC", description: "Engineering, Procurement & Construction" },
+    { title: "BYD in Mozambico", description: "Batterie al litio e supporto locale" },
+    { title: "Victron Supplier", description: "Attrezzature Victron Energy" },
+    { title: "Technical Support", description: "Assistenza tecnica specializzata" },
   ],
   hero: {
     title: "Soluzioni intelligenti per l’energia sostenibile",
@@ -376,12 +398,26 @@ export const it: Dictionary = fromEnglish(en, {
     eyebrow: "Soluzioni di energia solare",
     title: "L’energia giusta per ogni settore",
     sectors: [
-      { title: "Residenziale", description: "Autonomia energetica e riduzione costi per case e condomini." },
-      { title: "Commerciale", description: "Soluzioni scalabili per uffici, negozi e centri business." },
-      { title: "Industriale", description: "Sistemi robusti per fabbriche, magazzini e alta domanda." },
-      { title: "Turismo", description: "Energia affidabile e sostenibile per lodge e resort." },
-      { title: "Ospedali", description: "Continuità critica con backup solare e batterie." },
-      { title: "ONG", description: "Progetti comunitari con impatto ambientale positivo." },
+      {
+        title: "Modelo EPC (Engineering, Procurement & Construction)",
+        description:
+          "Dal progetto alla consegna chiavi in mano — engineering, procurement e installazione con responsabilità unica.",
+      },
+      {
+        title: "BYD in Mozambico",
+        description:
+          "Batterie al litio di riferimento mondiale, con stock e supporto tecnico locale.",
+      },
+      {
+        title: "Victron Supplier",
+        description:
+          "Inverter e controller Victron Energy per sistemi off-grid e ibridi.",
+      },
+      {
+        title: "Technical Support",
+        description:
+          "Assistenza tecnica specializzata, manutenzione e supporto continuo per i vostri sistemi.",
+      },
     ],
   },
   epc: {
