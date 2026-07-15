@@ -7,6 +7,7 @@ import {
   Footer,
   Header,
   Hero,
+  PartnersSection,
   ProjectsSection,
   SolarSolutionsSection,
   StatsSection,
@@ -27,6 +28,7 @@ export default function HomePage() {
         <VictronSection />
         <CatalogSection />
         <ProjectsSection />
+        <PartnersSection />
         <ContactSection />
       </main>
       <Footer />

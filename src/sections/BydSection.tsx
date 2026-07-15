@@ -18,11 +18,10 @@ export function BydSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
             <div className="space-y-6">
-              <div className="flex h-20 w-44 items-center justify-center rounded-2xl border border-brown-primary/10 bg-white px-6 shadow-sm">
-                {/* TODO: substituir por logótipo oficial BYD */}
+              <div className="flex h-20 w-44 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-black px-4 shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/partners/byd.svg"
+                  src="/images/partners/byd.png"
                   alt="BYD"
                   className="h-12 w-auto object-contain"
                 />

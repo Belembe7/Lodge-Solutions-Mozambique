@@ -209,15 +209,15 @@ export const HOW_IT_WORKS = [
 export const PARTNERS = [
   {
     name: "BYD",
-    logo: "/images/partners/byd.svg",
+    logo: "/images/partners/byd.png",
   },
   {
     name: "Victron Energy",
-    logo: "/images/partners/victron.svg",
+    logo: "/images/partners/victron.png",
   },
   {
     name: "Palmex",
-    logo: "/images/partners/palmex.svg",
+    logo: "/images/partners/palmex.png",
   },
 ] as const;
 

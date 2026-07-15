@@ -48,11 +48,10 @@ export function VictronSection() {
 
           <Reveal className="order-1 lg:order-2">
             <div className="space-y-6">
-              <div className="flex h-20 w-44 items-center justify-center rounded-2xl border border-brown-primary/10 bg-light-gray px-6 shadow-sm lg:ms-auto">
-                {/* TODO: substituir por logótipo oficial Victron */}
+              <div className="flex h-20 w-44 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-black px-4 shadow-sm lg:ms-auto">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/partners/victron.svg"
+                  src="/images/partners/victron.png"
                   alt="Victron Energy"
                   className="h-12 w-auto object-contain"
                 />

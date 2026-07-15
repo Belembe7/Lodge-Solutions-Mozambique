@@ -8,5 +8,6 @@ export { BydSection } from "./BydSection";
 export { VictronSection } from "./VictronSection";
 export { CatalogSection } from "./CatalogSection";
 export { ProjectsSection } from "./ProjectsSection";
+export { PartnersSection } from "./PartnersSection";
 export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";

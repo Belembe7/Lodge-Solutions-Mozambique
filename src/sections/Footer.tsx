@@ -92,13 +92,12 @@ export function Footer() {
             </h3>
             <div className="mt-3 flex flex-wrap items-center gap-4">
               {PARTNERS.map((partner) => (
-                // TODO: substituir por logótipos oficiais dos parceiros
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   key={partner.name}
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-8 w-auto object-contain brightness-0 invert opacity-80"
+                  className="h-10 w-auto rounded-md object-contain opacity-90"
                 />
               ))}
             </div>
