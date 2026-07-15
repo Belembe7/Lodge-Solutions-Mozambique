@@ -7,6 +7,13 @@ import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import { useTranslation } from "@/i18n/LanguageProvider";
 import { BYD_PRODUCT_IMAGE, PROJECTS } from "@/lib/constants";
+import {
+  cardHover,
+  premiumEase,
+  sectionFade,
+  softSpring,
+  viewportOnce,
+} from "@/lib/motion-variants";
 import { cn } from "@/lib/utils";
 import type { ProjectItem } from "@/types";
 
@@ -23,7 +30,14 @@ export function ProjectsSection() {
   }, [filterIndex]);
 
   return (
-    <section id="projetos" className="bg-white py-20 sm:py-28">
+    <motion.section
+      id="projetos"
+      className="bg-white py-20 sm:py-28"
+      variants={sectionFade}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+    >
       <Container>
         <SectionTitle
           eyebrow={t.projects.eyebrow}
@@ -38,7 +52,7 @@ export function ProjectsSection() {
               type="button"
               onClick={() => setFilterIndex(index)}
               className={cn(
-                "relative rounded-2xl px-4 py-2 text-sm font-medium transition-colors",
+                "relative rounded-2xl px-4 py-2 text-sm font-medium transition-colors duration-300",
                 filterIndex === index
                   ? "text-white"
                   : "bg-light-gray text-dark-gray hover:bg-brown-primary/10",
@@ -48,7 +62,7 @@ export function ProjectsSection() {
                 <motion.span
                   layoutId="project-filter"
                   className="absolute inset-0 rounded-2xl bg-brown-primary"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  transition={softSpring}
                 />
               ) : null}
               <span className="relative z-10">{item}</span>
@@ -78,7 +92,7 @@ export function ProjectsSection() {
           </motion.div>
         </LayoutGroup>
       </Container>
-    </section>
+    </motion.section>
   );
 }
 
@@ -95,12 +109,13 @@ function ProjectCard({
     <motion.article
       layout
       layoutId={project.id}
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.96 }}
-      transition={{ duration: 0.35 }}
+      initial={{ opacity: 0, y: 28 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 16 }}
+      transition={{ duration: 0.55, ease: premiumEase }}
+      whileHover={cardHover}
       className={cn(
-        "group relative aspect-[4/3] overflow-hidden rounded-3xl",
+        "group relative aspect-[4/3] overflow-hidden rounded-3xl will-change-transform shadow-sm transition-[box-shadow] duration-400 hover:shadow-[0_18px_40px_-16px_rgba(145,104,61,0.45)]",
         project.image === BYD_PRODUCT_IMAGE && "bg-[#F5F2EB]",
       )}
     >
@@ -109,15 +124,13 @@ function ProjectCard({
         alt={title}
         fill
         className={cn(
-          "transition-transform duration-500 group-hover:scale-110",
-          project.image === BYD_PRODUCT_IMAGE
-            ? "object-contain p-4"
-            : "object-cover",
+          "object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]",
+          project.image === BYD_PRODUCT_IMAGE && "object-contain p-4",
         )}
         sizes="(max-width: 768px) 100vw, 33vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/90 via-brown-dark/20 to-transparent opacity-80 transition-opacity group-hover:opacity-95" />
-      <div className="absolute inset-x-0 bottom-0 translate-y-2 p-5 opacity-90 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+      <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/90 via-brown-dark/20 to-transparent opacity-80 transition-opacity duration-400 group-hover:opacity-95" />
+      <div className="absolute inset-x-0 bottom-0 translate-y-2 p-5 opacity-90 transition-all duration-400 ease-out group-hover:translate-y-0 group-hover:opacity-100">
         <span className="mb-2 inline-block rounded-full bg-solar-gold/90 px-3 py-1 text-xs font-semibold text-brown-dark">
           {category}
         </span>

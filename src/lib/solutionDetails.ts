@@ -22,7 +22,7 @@ export const SOLUTION_DETAILS: SolutionDetail[] = [
     eyebrow: "Soluções EPC para Energia Solar",
     title: "Engineering, Procurement & Construction (EPC)",
     intro:
-      "A LSM — Lodge Solutions Mozambique presta serviços completos de EPC (Engineering, Procurement & Construction) para sistemas de energia solar, desde a auditoria energética e conceção do sistema até ao comissionamento e manutenção, garantindo desempenho e fiabilidade a longo prazo para clientes residenciais, comerciais e institucionais.",
+      "A LSM Lodge Solutions Mozambique presta serviços completos de EPC (Engineering, Procurement & Construction) para sistemas de energia solar, desde a auditoria energética e conceção do sistema até ao comissionamento e manutenção, garantindo desempenho e fiabilidade a longo prazo para clientes residenciais, comerciais e institucionais.",
     image: "/images/solutions/modelo-epc.png",
     blocks: [
       {
@@ -32,8 +32,8 @@ export const SOLUTION_DETAILS: SolutionDetail[] = [
           "Conceção de sistemas solares",
           "Comissionamento",
           "Manutenção",
-          "Sistemas Off-Grid",
-          "Sistemas Grid-Tied",
+          "Sistemas Off Grid",
+          "Sistemas Grid Tied",
           "Sistemas Híbridos",
           "Integração de armazenamento de energia",
           "Monitorização e otimização de sistemas energéticos",

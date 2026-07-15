@@ -30,6 +30,7 @@ export type Dictionary = {
     eyebrow: string;
     title: string;
     description: string;
+    featured: { title: string; description: string };
     sectors: { title: string; description: string }[];
   };
   epc: {
@@ -99,7 +100,7 @@ export type Dictionary = {
 
 const catalogItemsPt = [
   {
-    title: "BYD Battery-Box Premium",
+    title: "BYD Battery Box Premium",
     category: "BYD",
     description:
       "Armazenamento de lítio modular para sistemas residenciais e comerciais.",
@@ -108,7 +109,7 @@ const catalogItemsPt = [
     title: "Victron MultiPlus Inverter",
     category: "Victron",
     description:
-      "Inversor/carregador compacto para sistemas off-grid e híbridos.",
+      "Inversor/carregador compacto para sistemas off grid e híbridos.",
   },
   {
     title: "Kit Solar Residencial 5kW",
@@ -153,9 +154,9 @@ export const pt: Dictionary = {
   ],
   hero: {
     eyebrow: "LSM · Lodge Solutions Mozambique",
-    title: "Soluções Inteligentes para Energia Sustentável",
+    title: "Soluções Inteligentes\npara Energia, Construção\ne Infraestruturas",
     subtitle:
-      "Projetamos, instalamos e mantemos sistemas solares de alta performance para residências, empresas e projetos remotos.",
+      "Um parceiro único para desenvolver projetos sustentáveis com qualidade, inovação e desempenho.",
     ctaQuote: "Fale Connosco",
     ctaExplore: "Explorar Soluções",
   },
@@ -169,19 +170,24 @@ export const pt: Dictionary = {
     eyebrow: "Quem Somos",
     title: "Engenharia moçambicana ao serviço da energia limpa",
     description:
-      "A LSM — Lodge Solutions Mozambique é uma empresa especializada em energia solar, engenharia e construção sustentável. Unimos experiência técnica e compromisso ambiental para entregar soluções fiáveis, sob medida e de longa duração.",
+      "A LSM desenvolve e implementa soluções de engenharia para os setores da energia, construção e infraestruturas sustentáveis em Moçambique. Atuamos como parceiro EPC (Engineering, Procurement and Construction), entregando projetos completos desde o planeamento e engenharia até à implementação e manutenção.\n\nEspecializamo-nos em ambientes remotos e ambientalmente sensíveis, combinando inovação, qualidade técnica e práticas de baixo impacto para criar soluções duráveis, eficientes e adaptadas às necessidades de cada cliente.",
     highlights: ["Engenharia", "Energia Solar", "Construção Sustentável", "Soluções Completas"],
   },
   solutions: {
     eyebrow: "Soluções de Energia Solar",
     title: "Energia certa para cada sector",
     description:
-      "Do modelo EPC aos parceiros BYD e Victron — soluções integradas para autonomia energética em Moçambique.",
+      "Desenvolvemos soluções integradas de engenharia que combinam energia, construção sustentável e tecnologias avançadas para criar projetos eficientes, resilientes e adaptados às necessidades de Moçambique.",
+    featured: {
+      title: "Soluções de Energia Solar",
+      description:
+        "Projetamos, fornecemos e implementamos soluções completas de energia solar para residências, empresas, hotéis, indústrias e projetos de grande escala.",
+    },
     sectors: [
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "Do projeto à construção turnkey — engenharia, procurement e instalação com responsabilidade única.",
+          "Do projeto à construção turnkey, engenharia, procurement e instalação com responsabilidade única.",
       },
       {
         title: "BYD em Moçambique",
@@ -191,7 +197,7 @@ export const pt: Dictionary = {
       {
         title: "Victron Supplier",
         description:
-          "Inversores e controladores Victron Energy para sistemas off-grid e híbridos.",
+          "Inversores e controladores Victron Energy para sistemas off grid e híbridos.",
       },
       {
         title: "Technical Support",
@@ -204,7 +210,7 @@ export const pt: Dictionary = {
     eyebrow: "Modelo EPC",
     title: "Engineering, Procurement & Construction",
     description:
-      "Um modelo integrado que cobre todo o ciclo do projecto — da engenharia à construção — com responsabilidade única e resultados mensuráveis.",
+      "Um modelo integrado que cobre todo o ciclo do projecto, da engenharia à construção, com responsabilidade única e resultados mensuráveis.",
     steps: [
       {
         letter: "E",
@@ -243,7 +249,7 @@ export const pt: Dictionary = {
     eyebrow: "Fornecedor Autorizado",
     title: "Victron Supplier & Technical Support",
     description:
-      "Fornecemos equipamentos Victron Energy e suporte técnico especializado para inversores, controladores e sistemas off-grid/híbridos.",
+      "Fornecemos equipamentos Victron Energy e suporte técnico especializado para inversores, controladores e sistemas off grid/híbridos.",
     benefits: [
       "Inversores e controladores Victron",
       "Assistência técnica especializada",
@@ -268,12 +274,12 @@ export const pt: Dictionary = {
       "Uma seleção de projetos solares, de construção e energia autonomizada para diferentes sectores.",
     filters: ["Todos", "Solar", "Construção", "Baterias", "Lodges"],
     items: [
-      { title: "Instalação Solar Residencial — Inhambane", category: "Solar" },
-      { title: "Lodge Eco — Inhambane", category: "Lodges" },
-      { title: "BYD Battery-Box", category: "Baterias" },
-      { title: "Edifício Sustentável — Inhambane", category: "Construção" },
-      { title: "Sistema Off-grid Rural", category: "Solar" },
-      { title: "Resort Costeiro — Inhambane", category: "Lodges" },
+      { title: "Instalação Solar Residencial, Inhambane", category: "Solar" },
+      { title: "Lodge Eco, Inhambane", category: "Lodges" },
+      { title: "BYD Battery Box", category: "Baterias" },
+      { title: "Edifício Sustentável, Inhambane", category: "Construção" },
+      { title: "Sistema Off Grid Rural", category: "Solar" },
+      { title: "Resort Costeiro, Inhambane", category: "Lodges" },
     ],
   },
   contact: {
@@ -297,7 +303,7 @@ export const pt: Dictionary = {
   },
   footer: {
     blurb:
-      "Lodge Solutions Mozambique — innovative energy & construction solutions for sustainable living.",
+      "Lodge Solutions Mozambique, innovative energy & construction solutions for sustainable living.",
     quickLinks: "Links rápidos",
     social: "Redes sociais",
     partners: "Parceiros",
@@ -344,19 +350,24 @@ export const en: Dictionary = {
     eyebrow: "Who We Are",
     title: "Mozambican engineering for clean energy",
     description:
-      "LSM — Lodge Solutions Mozambique specializes in solar energy, engineering and sustainable construction. We combine technical expertise and environmental commitment to deliver reliable, tailored and lasting solutions.",
+      "LSM Lodge Solutions Mozambique specializes in solar energy, engineering and sustainable construction. We combine technical expertise and environmental commitment to deliver reliable, tailored and lasting solutions.",
     highlights: ["Engineering", "Solar Energy", "Sustainable Construction", "Complete Solutions"],
   },
   solutions: {
     eyebrow: "Solar Energy Solutions",
     title: "The right energy for every sector",
     description:
-      "From the EPC model to BYD and Victron partners — integrated solutions for energy autonomy in Mozambique.",
+      "From the EPC model to BYD and Victron partners, integrated solutions for energy autonomy in Mozambique.",
+    featured: {
+      title: "Solar Energy Solutions",
+      description:
+        "We design, supply and implement complete solar energy solutions for homes, businesses, hotels, industries and large-scale projects.",
+    },
     sectors: [
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "From design to turnkey construction — engineering, procurement and installation with single-point accountability.",
+          "From design to turnkey construction, engineering, procurement and installation with single point accountability.",
       },
       {
         title: "BYD in Mozambique",
@@ -366,7 +377,7 @@ export const en: Dictionary = {
       {
         title: "Victron Supplier",
         description:
-          "Victron Energy inverters and controllers for off-grid and hybrid systems.",
+          "Victron Energy inverters and controllers for off grid and hybrid systems.",
       },
       {
         title: "Technical Support",
@@ -379,7 +390,7 @@ export const en: Dictionary = {
     eyebrow: "EPC Model",
     title: "Engineering, Procurement & Construction",
     description:
-      "An integrated model covering the full project cycle — from engineering to construction — with single-point accountability.",
+      "An integrated model covering the full project cycle, from engineering to construction, with single point accountability.",
     steps: [
       {
         letter: "E",
@@ -418,7 +429,7 @@ export const en: Dictionary = {
     eyebrow: "Authorized Supplier",
     title: "Victron Supplier & Technical Support",
     description:
-      "We supply Victron Energy equipment and specialized technical support for inverters, controllers and off-grid/hybrid systems.",
+      "We supply Victron Energy equipment and specialized technical support for inverters, controllers and off grid/hybrid systems.",
     benefits: [
       "Victron inverters and charge controllers",
       "Specialized technical assistance",
@@ -435,14 +446,14 @@ export const en: Dictionary = {
     filters: ["All", "BYD", "Victron", "Solar Kits", "Accessories"],
     items: [
       {
-        title: "BYD Battery-Box Premium",
+        title: "BYD Battery Box Premium",
         category: "BYD",
         description: "Modular lithium storage for residential and commercial systems.",
       },
       {
         title: "Victron MultiPlus Inverter",
         category: "Victron",
-        description: "Compact inverter/charger for off-grid and hybrid systems.",
+        description: "Compact inverter/charger for off grid and hybrid systems.",
       },
       {
         title: "Residential Solar Kit 5kW",
@@ -473,12 +484,12 @@ export const en: Dictionary = {
     description: "A selection of solar, construction and autonomous energy projects across sectors.",
     filters: ["All", "Solar", "Construction", "Batteries", "Lodges"],
     items: [
-      { title: "Residential Solar Install — Inhambane", category: "Solar" },
-      { title: "Eco Lodge — Inhambane", category: "Lodges" },
-      { title: "BYD Battery-Box", category: "Batteries" },
-      { title: "Sustainable Building — Inhambane", category: "Construction" },
-      { title: "Rural Off-grid System", category: "Solar" },
-      { title: "Coastal Resort — Inhambane", category: "Lodges" },
+      { title: "Residential Solar Install, Inhambane", category: "Solar" },
+      { title: "Eco Lodge, Inhambane", category: "Lodges" },
+      { title: "BYD Battery Box", category: "Batteries" },
+      { title: "Sustainable Building, Inhambane", category: "Construction" },
+      { title: "Rural Off Grid System", category: "Solar" },
+      { title: "Coastal Resort, Inhambane", category: "Lodges" },
     ],
   },
   contact: {
@@ -501,7 +512,7 @@ export const en: Dictionary = {
     address: "Inhambane, Mozambique",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — innovative energy & construction solutions for sustainable living.",
+    blurb: "Lodge Solutions Mozambique, innovative energy & construction solutions for sustainable living.",
     quickLinks: "Quick links",
     social: "Social media",
     partners: "Partners",
@@ -548,19 +559,24 @@ export const fr: Dictionary = {
     eyebrow: "Qui sommes-nous",
     title: "L’ingénierie mozambicaine au service de l’énergie propre",
     description:
-      "LSM — Lodge Solutions Mozambique est spécialisée dans l’énergie solaire, l’ingénierie et la construction durable. Nous offrons des solutions fiables, sur mesure et durables.",
+      "LSM Lodge Solutions Mozambique est spécialisée dans l’énergie solaire, l’ingénierie et la construction durable. Nous offrons des solutions fiables, sur mesure et durables.",
     highlights: ["Ingénierie", "Énergie solaire", "Construction durable", "Solutions complètes"],
   },
   solutions: {
     eyebrow: "Solutions d’énergie solaire",
     title: "La bonne énergie pour chaque secteur",
     description:
-      "Du modèle EPC aux partenaires BYD et Victron — des solutions intégrées pour l’autonomie énergétique au Mozambique.",
+      "Du modèle EPC aux partenaires BYD et Victron, des solutions intégrées pour l’autonomie énergétique au Mozambique.",
+    featured: {
+      title: "Solutions d’énergie solaire",
+      description:
+        "Nous concevons, fournissons et mettons en œuvre des solutions solaires complètes pour logements, entreprises, hôtels, industries et projets à grande échelle.",
+    },
     sectors: [
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "De la conception à la construction clé en main — ingénierie, procurement et installation avec responsabilité unique.",
+          "De la conception à la construction clé en main, ingénierie, procurement et installation avec responsabilité unique.",
       },
       {
         title: "BYD au Mozambique",
@@ -583,7 +599,7 @@ export const fr: Dictionary = {
     eyebrow: "Modèle EPC",
     title: "Engineering, Procurement & Construction",
     description:
-      "Un modèle intégré couvrant tout le cycle du projet — de l’ingénierie à la construction — avec une responsabilité unique.",
+      "Un modèle intégré couvrant tout le cycle du projet, de l’ingénierie à la construction, avec une responsabilité unique.",
     steps: [
       {
         letter: "E",
@@ -639,7 +655,7 @@ export const fr: Dictionary = {
     filters: ["Tous", "BYD", "Victron", "Kits solaires", "Accessoires"],
     items: [
       {
-        title: "BYD Battery-Box Premium",
+        title: "BYD Battery Box Premium",
         category: "BYD",
         description: "Stockage lithium modulaire pour systèmes résidentiels et commerciaux.",
       },
@@ -677,12 +693,12 @@ export const fr: Dictionary = {
     description: "Une sélection de projets solaires, de construction et d’énergie autonome.",
     filters: ["Tous", "Solaire", "Construction", "Batteries", "Lodges"],
     items: [
-      { title: "Installation solaire résidentielle — Inhambane", category: "Solaire" },
-      { title: "Lodge écologique — Inhambane", category: "Lodges" },
-      { title: "BYD Battery-Box", category: "Batteries" },
-      { title: "Bâtiment durable — Inhambane", category: "Construction" },
+      { title: "Installation solaire résidentielle, Inhambane", category: "Solaire" },
+      { title: "Lodge écologique, Inhambane", category: "Lodges" },
+      { title: "BYD Battery Box", category: "Batteries" },
+      { title: "Bâtiment durable, Inhambane", category: "Construction" },
       { title: "Système hors réseau rural", category: "Solaire" },
-      { title: "Resort côtier — Inhambane", category: "Lodges" },
+      { title: "Resort côtier, Inhambane", category: "Lodges" },
     ],
   },
   contact: {
@@ -690,7 +706,7 @@ export const fr: Dictionary = {
     title: "Parlons de votre projet",
     description: "Demandez un devis ou planifiez une consultation technique.",
     name: "Nom",
-    email: "E-mail",
+    email: "Email",
     phone: "Téléphone",
     subject: "Sujet",
     message: "Message",
@@ -698,14 +714,14 @@ export const fr: Dictionary = {
     success: "Message envoyé avec succès. Nous vous répondrons bientôt.",
     error: "Envoi impossible. Réessayez ou contactez-nous sur WhatsApp.",
     phoneLabel: "Téléphone",
-    emailLabel: "E-mail",
+    emailLabel: "Email",
     whatsappLabel: "WhatsApp",
     whatsappValue: "Discuter sur WhatsApp",
     addressLabel: "Adresse",
     address: "Inhambane, Mozambique",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — solutions innovantes d’énergie et de construction durable.",
+    blurb: "Lodge Solutions Mozambique, solutions innovantes d’énergie et de construction durable.",
     quickLinks: "Liens rapides",
     social: "Réseaux sociaux",
     partners: "Partenaires",

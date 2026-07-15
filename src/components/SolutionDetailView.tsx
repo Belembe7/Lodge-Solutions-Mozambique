@@ -152,7 +152,7 @@ export function SolutionDetailView({ solution }: SolutionDetailViewProps) {
               <div className="flex flex-wrap justify-center gap-3">
                 {/* TODO: substituir CONTACT.email pelo email definitivo de contacto */}
                 <Button
-                  href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Contacto — ${solution.title}`)}`}
+                  href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Contacto, ${solution.title}`)}`}
                   size="lg"
                 >
                   Fale conosco

@@ -94,7 +94,7 @@ export function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="font-display text-4xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl"
+            className="whitespace-pre-line font-display text-4xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl"
           >
             {t.hero.title}
           </motion.h1>

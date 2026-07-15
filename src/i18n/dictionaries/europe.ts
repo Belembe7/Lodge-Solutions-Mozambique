@@ -38,19 +38,19 @@ export const es: Dictionary = fromEnglish(en, {
     eyebrow: "Quiénes somos",
     title: "Ingeniería mozambicana al servicio de la energía limpia",
     description:
-      "LSM — Lodge Solutions Mozambique se especializa en energía solar, ingeniería y construcción sostenible. Ofrecemos soluciones fiables, a medida y duraderas.",
+      "LSM Lodge Solutions Mozambique se especializa en energía solar, ingeniería y construcción sostenible. Ofrecemos soluciones fiables, a medida y duraderas.",
     highlights: ["Ingeniería", "Energía solar", "Construcción sostenible", "Soluciones completas"],
   },
   solutions: {
     eyebrow: "Soluciones de energía solar",
     title: "La energía adecuada para cada sector",
     description:
-      "Del modelo EPC a los socios BYD y Victron — soluciones integradas para la autonomía energética en Mozambique.",
+      "Del modelo EPC a los socios BYD y Victron, soluciones integradas para la autonomía energética en Mozambique.",
     sectors: [
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "Del diseño a la construcción llave en mano — ingeniería, procurement e instalación con responsabilidad única.",
+          "Del diseño a la construcción llave en mano, ingeniería, procurement e instalación con responsabilidad única.",
       },
       {
         title: "BYD en Mozambique",
@@ -60,7 +60,7 @@ export const es: Dictionary = fromEnglish(en, {
       {
         title: "Victron Supplier",
         description:
-          "Inversores y controladores Victron Energy para sistemas off-grid e híbridos.",
+          "Inversores y controladores Victron Energy para sistemas off grid e híbridos.",
       },
       {
         title: "Technical Support",
@@ -72,7 +72,7 @@ export const es: Dictionary = fromEnglish(en, {
   epc: {
     eyebrow: "Modelo EPC",
     description:
-      "Un modelo integrado que cubre todo el ciclo del proyecto — de la ingeniería a la construcción — con responsabilidad única.",
+      "Un modelo integrado que cubre todo el ciclo del proyecto, de la ingeniería a la construcción, con responsabilidad única.",
     steps: [
       {
         letter: "E",
@@ -110,7 +110,7 @@ export const es: Dictionary = fromEnglish(en, {
   victron: {
     eyebrow: "Proveedor autorizado",
     description:
-      "Suministramos equipos Victron Energy y soporte técnico especializado para inversores, controladores y sistemas off-grid/híbridos.",
+      "Suministramos equipos Victron Energy y soporte técnico especializado para inversores, controladores y sistemas off grid/híbridos.",
     benefits: [
       "Inversores y controladores Victron",
       "Asistencia técnica especializada",
@@ -127,14 +127,14 @@ export const es: Dictionary = fromEnglish(en, {
     filters: ["Todos", "BYD", "Victron", "Kits solares", "Accesorios"],
     items: [
       {
-        title: "BYD Battery-Box Premium",
+        title: "BYD Battery Box Premium",
         category: "BYD",
         description: "Almacenamiento de litio modular para sistemas residenciales y comerciales.",
       },
       {
         title: "Victron MultiPlus Inverter",
         category: "Victron",
-        description: "Inversor/cargador compacto para sistemas off-grid e híbridos.",
+        description: "Inversor/cargador compacto para sistemas off grid e híbridos.",
       },
       {
         title: "Kit solar residencial 5kW",
@@ -165,12 +165,12 @@ export const es: Dictionary = fromEnglish(en, {
     description: "Una selección de proyectos solares, de construcción y energía autónoma.",
     filters: ["Todos", "Solar", "Construcción", "Baterías", "Lodges"],
     items: [
-      { title: "Instalación solar residencial — Inhambane", category: "Solar" },
-      { title: "Lodge ecológico — Inhambane", category: "Lodges" },
-      { title: "BYD Battery-Box", category: "Baterías" },
-      { title: "Edificio sostenible — Inhambane", category: "Construcción" },
-      { title: "Sistema off-grid rural", category: "Solar" },
-      { title: "Resort costero — Inhambane", category: "Lodges" },
+      { title: "Instalación solar residencial, Inhambane", category: "Solar" },
+      { title: "Lodge ecológico, Inhambane", category: "Lodges" },
+      { title: "BYD Battery Box", category: "Baterías" },
+      { title: "Edificio sostenible, Inhambane", category: "Construcción" },
+      { title: "Sistema Off Grid rural", category: "Solar" },
+      { title: "Resort costero, Inhambane", category: "Lodges" },
     ],
   },
   contact: {
@@ -192,7 +192,7 @@ export const es: Dictionary = fromEnglish(en, {
     address: "Inhambane, Mozambique",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — soluciones innovadoras de energía y construcción sostenible.",
+    blurb: "Lodge Solutions Mozambique, soluciones innovadoras de energía y construcción sostenible.",
     quickLinks: "Enlaces rápidos",
     social: "Redes sociales",
     partners: "Socios",
@@ -236,7 +236,7 @@ export const de: Dictionary = fromEnglish(en, {
     eyebrow: "Wer wir sind",
     title: "Mosambikanische Technik für saubere Energie",
     description:
-      "LSM — Lodge Solutions Mozambique ist auf Solarenergie, Engineering und nachhaltiges Bauen spezialisiert. Wir liefern zuverlässige, maßgeschneiderte und langlebige Lösungen.",
+      "LSM Lodge Solutions Mozambique ist auf Solarenergie, Engineering und nachhaltiges Bauen spezialisiert. Wir liefern zuverlässige, maßgeschneiderte und langlebige Lösungen.",
     highlights: ["Engineering", "Solarenergie", "Nachhaltiges Bauen", "Komplettlösungen"],
   },
   solutions: {
@@ -246,7 +246,7 @@ export const de: Dictionary = fromEnglish(en, {
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "Vom Design bis zur schlüsselfertigen Übergabe — Engineering, Procurement und Installation aus einer Hand.",
+          "Vom Design bis zur schlüsselfertigen Übergabe, Engineering, Procurement und Installation aus einer Hand.",
       },
       {
         title: "BYD in Mosambik",
@@ -256,7 +256,7 @@ export const de: Dictionary = fromEnglish(en, {
       {
         title: "Victron Supplier",
         description:
-          "Victron-Wechselrichter und Laderegler für Off-Grid- und Hybridsysteme.",
+          "Victron-Wechselrichter und Laderegler für Off Grid und Hybridsysteme.",
       },
       {
         title: "Technical Support",
@@ -268,7 +268,7 @@ export const de: Dictionary = fromEnglish(en, {
   epc: {
     eyebrow: "EPC-Modell",
     description:
-      "Ein integriertes Modell für den gesamten Projektzyklus — vom Engineering bis zur Construction — mit klarer Gesamtverantwortung.",
+      "Ein integriertes Modell für den gesamten Projektzyklus, vom Engineering bis zur Construction, mit klarer Gesamtverantwortung.",
     steps: [
       {
         letter: "E",
@@ -306,7 +306,7 @@ export const de: Dictionary = fromEnglish(en, {
   victron: {
     eyebrow: "Autorisierter Lieferant",
     description:
-      "Wir liefern Victron-Energy-Geräte und spezialisierten Support für Wechselrichter, Regler und Off-Grid-/Hybridsysteme.",
+      "Wir liefern Victron-Energy-Geräte und spezialisierten Support für Wechselrichter, Regler und Off Grid und Hybridsysteme.",
     benefits: [
       "Victron-Wechselrichter und Laderegler",
       "Spezialisierte technische Unterstützung",
@@ -347,7 +347,7 @@ export const de: Dictionary = fromEnglish(en, {
     address: "Inhambane, Mosambik",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — innovative Energie- und Baulösungen für nachhaltiges Leben.",
+    blurb: "Lodge Solutions Mozambique, innovative Energie- und Baulösungen für nachhaltiges Leben.",
     quickLinks: "Schnelllinks",
     social: "Social Media",
     partners: "Partner",
@@ -391,7 +391,7 @@ export const it: Dictionary = fromEnglish(en, {
     eyebrow: "Chi siamo",
     title: "Ingegneria mozambicana al servizio dell’energia pulita",
     description:
-      "LSM — Lodge Solutions Mozambique è specializzata in energia solare, ingegneria e costruzione sostenibile. Offriamo soluzioni affidabili, su misura e durature.",
+      "LSM Lodge Solutions Mozambique è specializzata in energia solare, ingegneria e costruzione sostenibile. Offriamo soluzioni affidabili, su misura e durature.",
     highlights: ["Ingegneria", "Energia solare", "Costruzione sostenibile", "Soluzioni complete"],
   },
   solutions: {
@@ -401,7 +401,7 @@ export const it: Dictionary = fromEnglish(en, {
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
         description:
-          "Dal progetto alla consegna chiavi in mano — engineering, procurement e installazione con responsabilità unica.",
+          "Dal progetto alla consegna chiavi in mano, engineering, procurement e installazione con responsabilità unica.",
       },
       {
         title: "BYD in Mozambico",
@@ -411,7 +411,7 @@ export const it: Dictionary = fromEnglish(en, {
       {
         title: "Victron Supplier",
         description:
-          "Inverter e controller Victron Energy per sistemi off-grid e ibridi.",
+          "Inverter e controller Victron Energy per sistemi off grid e ibridi.",
       },
       {
         title: "Technical Support",
@@ -423,7 +423,7 @@ export const it: Dictionary = fromEnglish(en, {
   epc: {
     eyebrow: "Modello EPC",
     description:
-      "Un modello integrato che copre l’intero ciclo del progetto — dall’ingegneria alla costruzione — con unica responsabilità.",
+      "Un modello integrato che copre l’intero ciclo del progetto, dall’ingegneria alla costruzione, con unica responsabilità.",
     steps: [
       {
         letter: "E",
@@ -461,7 +461,7 @@ export const it: Dictionary = fromEnglish(en, {
   victron: {
     eyebrow: "Fornitore autorizzato",
     description:
-      "Forniamo attrezzature Victron Energy e supporto tecnico specializzato per inverter, controller e sistemi off-grid/ibridi.",
+      "Forniamo attrezzature Victron Energy e supporto tecnico specializzato per inverter, controller e sistemi off grid/ibridi.",
     benefits: [
       "Inverter e controller Victron",
       "Assistenza tecnica specializzata",
@@ -502,7 +502,7 @@ export const it: Dictionary = fromEnglish(en, {
     address: "Inhambane, Mozambico",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — soluzioni innovative di energia e costruzione sostenibile.",
+    blurb: "Lodge Solutions Mozambique, soluzioni innovative di energia e costruzione sostenibile.",
     quickLinks: "Link rapidi",
     social: "Social",
     partners: "Partner",

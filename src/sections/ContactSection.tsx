@@ -3,6 +3,7 @@
 import { forwardRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
@@ -41,7 +42,14 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contacto" className="bg-white py-20 sm:py-28">
+    <motion.section
+      id="contacto"
+      className="bg-white py-20 sm:py-28"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Container>
         <SectionTitle
           eyebrow={t.contact.eyebrow}
@@ -53,7 +61,7 @@ export function ContactSection() {
           <Reveal>
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="space-y-5 rounded-3xl border border-brown-primary/10 bg-light-gray p-6 sm:p-8"
+              className="space-y-5 rounded-3xl border border-brown-primary/10 bg-light-gray p-6 shadow-sm transition-shadow duration-400 hover:shadow-[0_16px_36px_-18px_rgba(145,104,61,0.35)] sm:p-8"
               noValidate
             >
               <Field
@@ -160,7 +168,7 @@ export function ContactSection() {
           </Reveal>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 }
 
@@ -224,7 +232,7 @@ function ContactLine({
         href={href}
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-        className="flex items-center gap-3 rounded-2xl border border-brown-primary/10 p-4 transition hover:border-brown-primary/30 hover:bg-light-gray"
+        className="flex items-center gap-3 rounded-2xl border border-brown-primary/10 p-4 transition-[border-color,background-color,transform] duration-300 ease-out hover:-translate-y-0.5 hover:border-brown-primary/30 hover:bg-light-gray"
       >
         {content}
       </a>

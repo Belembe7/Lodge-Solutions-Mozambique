@@ -9,6 +9,13 @@ import { Container } from "@/components/Container";
 import { SectionTitle } from "@/components/SectionTitle";
 import { useTranslation } from "@/i18n/LanguageProvider";
 import { CATALOG_ITEMS } from "@/lib/constants";
+import {
+  cardHover,
+  premiumEase,
+  sectionFade,
+  softSpring,
+  viewportOnce,
+} from "@/lib/motion-variants";
 import { cn } from "@/lib/utils";
 import type { CatalogItem } from "@/types";
 
@@ -25,7 +32,14 @@ export function CatalogSection() {
   }, [filterIndex]);
 
   return (
-    <section id="catalogo" className="bg-light-gray py-20 sm:py-28">
+    <motion.section
+      id="catalogo"
+      className="bg-light-gray py-20 sm:py-28"
+      variants={sectionFade}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+    >
       <Container>
         <SectionTitle
           eyebrow={t.catalog.eyebrow}
@@ -40,7 +54,7 @@ export function CatalogSection() {
               type="button"
               onClick={() => setFilterIndex(index)}
               className={cn(
-                "relative rounded-2xl px-4 py-2 text-sm font-medium transition-colors",
+                "relative rounded-2xl px-4 py-2 text-sm font-medium transition-colors duration-300",
                 filterIndex === index
                   ? "text-white"
                   : "bg-white text-dark-gray hover:bg-brown-primary/10",
@@ -50,7 +64,7 @@ export function CatalogSection() {
                 <motion.span
                   layoutId="catalog-filter"
                   className="absolute inset-0 rounded-2xl bg-brown-primary"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  transition={softSpring}
                 />
               ) : null}
               <span className="relative z-10">{item}</span>
@@ -89,7 +103,7 @@ export function CatalogSection() {
           </Button>
         </div>
       </Container>
-    </section>
+    </motion.section>
   );
 }
 
@@ -108,11 +122,12 @@ function CatalogCard({
     <motion.article
       layout
       layoutId={item.id}
-      initial={{ opacity: 0, scale: 0.96 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.96 }}
-      transition={{ duration: 0.35 }}
-      className="group overflow-hidden rounded-3xl border border-brown-primary/10 bg-white shadow-sm transition-shadow hover:shadow-md"
+      initial={{ opacity: 0, y: 28 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 16 }}
+      transition={{ duration: 0.55, ease: premiumEase }}
+      whileHover={cardHover}
+      className="group overflow-hidden rounded-3xl border border-brown-primary/10 bg-white shadow-sm will-change-transform transition-[box-shadow] duration-400 hover:shadow-[0_16px_36px_-14px_rgba(145,104,61,0.4)]"
     >
       <div className="relative aspect-[16/10] overflow-hidden bg-[#F5F2EB]">
         <Image
@@ -120,10 +135,9 @@ function CatalogCard({
           alt={title}
           fill
           className={cn(
-            "transition-transform duration-500 group-hover:scale-105",
-            item.category === "BYD" || item.category === "Victron"
-              ? "object-contain p-4"
-              : "object-cover",
+            "object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]",
+            (item.category === "BYD" || item.category === "Victron") &&
+              "object-contain p-4",
           )}
           sizes="(max-width: 768px) 100vw, 33vw"
         />

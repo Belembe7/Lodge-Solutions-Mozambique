@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { premiumEase, viewportOnce } from "@/lib/motion-variants";
 
 type RevealProps = {
   children: React.ReactNode;
@@ -10,20 +11,20 @@ type RevealProps = {
   y?: number;
 };
 
-/** Scroll reveal genérico: sobe e fade-in ao entrar no viewport. */
+/** Scroll reveal genérico premium: subida curta + fade, once only. */
 export function Reveal({
   children,
   className,
   delay = 0,
-  y = 32,
+  y = 28,
 }: RevealProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.55, ease: "easeOut", delay }}
-      className={cn(className)}
+      viewport={viewportOnce}
+      transition={{ duration: 0.85, ease: premiumEase, delay }}
+      className={cn("will-change-transform", className)}
     >
       {children}
     </motion.div>

@@ -37,7 +37,7 @@ export const zh: Dictionary = fromEnglish(en, {
     eyebrow: "关于我们",
     title: "莫桑比克工程服务清洁能源",
     description:
-      "LSM — Lodge Solutions Mozambique 专注于太阳能、工程与可持续建筑，提供可靠、定制且持久的解决方案。",
+      "LSM Lodge Solutions Mozambique 专注于太阳能、工程与可持续建筑，提供可靠、定制且持久的解决方案。",
     highlights: ["工程", "太阳能", "可持续建筑", "完整方案"],
   },
   solutions: {
@@ -46,7 +46,7 @@ export const zh: Dictionary = fromEnglish(en, {
     sectors: [
       {
         title: "Modelo EPC (Engineering, Procurement & Construction)",
-        description: "从设计到交钥匙交付——工程、采购与安装统一负责。",
+        description: "从设计到交钥匙交付, 工程、采购与安装统一负责。",
       },
       {
         title: "BYD 在莫桑比克",
@@ -139,7 +139,7 @@ export const zh: Dictionary = fromEnglish(en, {
     address: "莫桑比克，伊尼扬巴内",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — 创新能源与可持续建筑解决方案。",
+    blurb: "Lodge Solutions Mozambique, 创新能源与可持续建筑解决方案。",
     quickLinks: "快捷链接",
     social: "社交媒体",
     partners: "合作伙伴",
@@ -183,7 +183,7 @@ export const ar: Dictionary = fromEnglish(en, {
     eyebrow: "من نحن",
     title: "هندسة موزمبيقية لخدمة الطاقة النظيفة",
     description:
-      "تتخصص LSM — Lodge Solutions Mozambique في الطاقة الشمسية والهندسة والبناء المستدام، لتقديم حلول موثوقة ومخصصة وطويلة الأمد.",
+      "تتخصص LSM Lodge Solutions Mozambique في الطاقة الشمسية والهندسة والبناء المستدام، لتقديم حلول موثوقة ومخصصة وطويلة الأمد.",
     highlights: ["هندسة", "طاقة شمسية", "بناء مستدام", "حلول متكاملة"],
   },
   solutions: {
@@ -193,7 +193,7 @@ export const ar: Dictionary = fromEnglish(en, {
   epc: {
     eyebrow: "نموذج EPC",
     description:
-      "نموذج متكامل يغطي دورة المشروع بالكامل — من الهندسة إلى الإنشاء — بمسؤولية موحدة.",
+      "نموذج متكامل يغطي دورة المشروع بالكامل, من الهندسة إلى الإنشاء, بمسؤولية موحدة.",
   },
   byd: {
     eyebrow: "شريك رسمي",
@@ -234,7 +234,7 @@ export const ar: Dictionary = fromEnglish(en, {
     address: "إينهامباني، موزمبيق",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — حلول مبتكرة للطاقة والبناء المستدام.",
+    blurb: "Lodge Solutions Mozambique, حلول مبتكرة للطاقة والبناء المستدام.",
     quickLinks: "روابط سريعة",
     social: "وسائل التواصل",
     partners: "الشركاء",
@@ -286,7 +286,7 @@ export const ru: Dictionary = fromEnglish(en, {
   epc: {
     eyebrow: "Модель EPC",
     description:
-      "Интегрированная модель полного цикла — от инженерии до строительства — с единой зоной ответственности.",
+      "Интегрированная модель полного цикла, от инженерии до строительства, с единой зоной ответственности.",
   },
   byd: {
     eyebrow: "Официальный партнёр",
@@ -327,7 +327,7 @@ export const ru: Dictionary = fromEnglish(en, {
     address: "Иньямбане, Мозамбик",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — инновационные решения в энергетике и строительстве.",
+    blurb: "Lodge Solutions Mozambique, инновационные решения в энергетике и строительстве.",
     quickLinks: "Быстрые ссылки",
     social: "Соцсети",
     partners: "Партнёры",
@@ -420,7 +420,7 @@ export const ja: Dictionary = fromEnglish(en, {
     address: "モザンビーク、イニャンバネ",
   },
   footer: {
-    blurb: "Lodge Solutions Mozambique — 持続可能な生活のための革新的なエネルギー＆建設ソリューション。",
+    blurb: "Lodge Solutions Mozambique, 持続可能な生活のための革新的なエネルギー＆建設ソリューション。",
     quickLinks: "クイックリンク",
     social: "ソーシャル",
     partners: "パートナー",

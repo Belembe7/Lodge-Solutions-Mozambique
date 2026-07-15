@@ -1,19 +1,37 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Container } from "@/components/Container";
 import { useTranslation } from "@/i18n/LanguageProvider";
 import { PARTNERS } from "@/lib/constants";
+import {
+  premiumEase,
+  sectionFade,
+  viewportOnce,
+} from "@/lib/motion-variants";
 
 export function PartnersSection() {
   const { t } = useTranslation();
   const logos = [...PARTNERS, ...PARTNERS, ...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="overflow-hidden bg-white py-14 sm:py-16">
+    <motion.section
+      className="overflow-hidden bg-white py-14 sm:py-16"
+      variants={sectionFade}
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewportOnce}
+    >
       <Container>
-        <p className="mb-8 text-center text-sm font-medium tracking-wider text-brown-primary uppercase">
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewportOnce}
+          transition={{ duration: 0.8, ease: premiumEase }}
+          className="mb-8 text-center text-sm font-medium tracking-wider text-brown-primary uppercase"
+        >
           {t.footer.partners}
-        </p>
+        </motion.p>
       </Container>
 
       <div className="relative">
@@ -24,7 +42,7 @@ export function PartnersSection() {
           {logos.map((partner, index) => (
             <div
               key={`${partner.name}-${index}`}
-              className="flex h-24 w-56 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-white px-4 transition-all duration-300 hover:border-brown-primary/25 hover:shadow-md"
+              className="flex h-24 w-56 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-brown-primary/10 bg-white px-4 transition-[border-color,box-shadow,transform] duration-400 ease-out hover:-translate-y-1 hover:border-brown-primary/25 hover:shadow-[0_12px_28px_-14px_rgba(145,104,61,0.35)]"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -36,6 +54,6 @@ export function PartnersSection() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

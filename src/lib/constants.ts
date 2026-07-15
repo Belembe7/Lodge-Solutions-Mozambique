@@ -9,7 +9,7 @@ import type {
   StatItem,
 } from "@/types";
 
-export const SITE_NAME = "LSM — Lodge Solutions Mozambique";
+export const SITE_NAME = "LSM Lodge Solutions Mozambique";
 export const SITE_TAGLINE =
   "Innovative Energy & Construction Solutions for Sustainable Living";
 
@@ -81,7 +81,7 @@ export const SERVICES: ServiceItem[] = [
     icon: "BatteryCharging",
   },
   {
-    title: "Sistemas Off-grid",
+    title: "Sistemas Off Grid",
     description:
       "Energia independente da rede para lodges, comunidades e operações remotas.",
     icon: "Home",
@@ -111,7 +111,7 @@ export const SECTOR_SOLUTIONS: SectorSolution[] = [
     id: "epc",
     title: "Modelo EPC (Engineering, Procurement & Construction)",
     description:
-      "Do projeto à construção turnkey — engenharia, procurement e instalação com responsabilidade única.",
+      "Do projeto à construção turnkey, engenharia, procurement e instalação com responsabilidade única.",
     href: "/solucoes/epc",
     image: "/images/solutions/modelo-epc.png",
   },
@@ -127,7 +127,7 @@ export const SECTOR_SOLUTIONS: SectorSolution[] = [
     id: "victron",
     title: "Victron Supplier",
     description:
-      "Inversores e controladores Victron Energy para sistemas off-grid e híbridos.",
+      "Inversores e controladores Victron Energy para sistemas off grid e híbridos.",
     href: "/solucoes/victron",
     image: "/images/partners/victron-energy.png",
   },
@@ -199,31 +199,31 @@ export const VICTRON_PRODUCT_IMAGE = "/images/partners/victron-energy.png";
 export const PROJECTS: ProjectItem[] = [
   {
     id: "1",
-    title: "Instalação Solar Residencial — Inhambane",
+    title: "Instalação Solar Residencial, Inhambane",
     category: "Solar",
     image: "/images/projects/instalacao-solar-residencial.png",
   },
   {
     id: "2",
-    title: "Lodge Eco — Inhambane",
+    title: "Lodge Eco, Inhambane",
     category: "Lodges",
     image: "/images/projects/lodge-eco.png",
   },
   {
     id: "3",
-    title: "BYD Battery-Box",
+    title: "BYD Battery Box",
     category: "Baterias",
     image: BYD_PRODUCT_IMAGE,
   },
   {
     id: "4",
-    title: "Edifício Sustentável — Inhambane",
+    title: "Edifício Sustentável, Inhambane",
     category: "Construção",
     image: "/images/projects/edificio-sustentavel.png",
   },
   {
     id: "5",
-    title: "Sistema Off-grid Rural",
+    title: "Sistema Off Grid Rural",
     category: "Solar",
     // TODO: substituir por imagem real do cliente
     image:
@@ -231,7 +231,7 @@ export const PROJECTS: ProjectItem[] = [
   },
   {
     id: "6",
-    title: "Resort Costeiro — Inhambane",
+    title: "Resort Costeiro, Inhambane",
     category: "Lodges",
     image: "/images/projects/resort-costeiro.png",
   },
@@ -252,7 +252,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Funciona em caso de falha de energia da rede?",
     answer:
-      "Sim. Com sistemas híbridos ou off-grid com baterias, a instalação pode continuar a fornecer energia mesmo quando a rede pública falha.",
+      "Sim. Com sistemas híbridos ou off grid com baterias, a instalação pode continuar a fornecer energia mesmo quando a rede pública falha.",
   },
   {
     question: "A LSM também faz manutenção?",
@@ -285,7 +285,7 @@ export const SOCIAL_LINKS = [
 export const CATALOG_ITEMS: CatalogItem[] = [
   {
     id: "byd-battery-box",
-    title: "BYD Battery-Box Premium",
+    title: "BYD Battery Box Premium",
     description: "Armazenamento de lítio modular para sistemas residenciais e comerciais.",
     category: "BYD",
     image: BYD_PRODUCT_IMAGE,
@@ -293,7 +293,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
   {
     id: "victron-multiplus",
     title: "Victron MultiPlus Inverter",
-    description: "Inversor/carregador compacto para sistemas off-grid e híbridos.",
+    description: "Inversor/carregador compacto para sistemas off grid e híbridos.",
     category: "Victron",
     image: VICTRON_PRODUCT_IMAGE,
   },

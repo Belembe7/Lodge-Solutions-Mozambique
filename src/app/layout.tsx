@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:
-      "LSM | Lodge Solutions Mozambique — Energia & Construção Sustentável",
+      "LSM | Lodge Solutions Mozambique, Energia & Construção Sustentável",
     template: "%s | LSM Lodge Solutions Mozambique",
   },
   description:
-    "LSM — Lodge Solutions Mozambique. Energia solar, engenharia e construção sustentável em Inhambane.",
+    "LSM Lodge Solutions Mozambique. Energia solar, engenharia e construção sustentável em Inhambane.",
   keywords: [
     "LSM",
     "Lodge Solutions Mozambique",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     "painéis solares",
     "baterias",
     "construção sustentável",
-    "off-grid",
+    "off grid",
   ],
   authors: [{ name: "Lodge Solutions Mozambique" }],
   openGraph: {
     type: "website",
     locale: "pt_MZ",
     url: siteUrl,
-    siteName: "LSM — Lodge Solutions Mozambique",
+    siteName: "LSM Lodge Solutions Mozambique",
     title: "LSM | Lodge Solutions Mozambique",
     description:
       "Innovative Energy & Construction Solutions for Sustainable Living.",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "LSM — Energia Solar",
+        alt: "LSM, Energia Solar",
       },
     ],
   },

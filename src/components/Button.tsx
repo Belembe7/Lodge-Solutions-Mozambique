@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { microTransition } from "@/lib/motion-variants";
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -30,7 +32,7 @@ const sizes = {
   lg: "px-8 py-3.5 text-base sm:text-lg",
 };
 
-/** Botão reutilizável com variantes de marca. */
+/** Botão reutilizável com hover premium suave. */
 export function Button({
   children,
   href,
@@ -43,7 +45,7 @@ export function Button({
   loading,
 }: ButtonProps) {
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-2xl font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-solar-gold focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60",
+    "group/btn inline-flex items-center justify-center gap-2 rounded-2xl font-medium transition-[background-color,box-shadow,border-color,color] duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-solar-gold focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60",
     variants[variant],
     sizes[size],
     className,
@@ -54,26 +56,36 @@ export function Button({
       {loading ? (
         <span className="size-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
       ) : null}
-      {children}
+      <span className="inline-flex items-center gap-2 transition-transform duration-300 ease-out group-hover/btn:translate-x-0.5">
+        {children}
+      </span>
     </>
   );
 
   if (href) {
     return (
-      <Link href={href} className={classes} onClick={onClick}>
-        {content}
-      </Link>
+      <motion.div
+        className="inline-flex"
+        whileHover={{ scale: 1.02 }}
+        transition={microTransition}
+      >
+        <Link href={href} className={classes} onClick={onClick}>
+          {content}
+        </Link>
+      </motion.div>
     );
   }
 
   return (
-    <button
+    <motion.button
       type={type}
       onClick={onClick}
       disabled={disabled || loading}
       className={classes}
+      whileHover={{ scale: 1.02 }}
+      transition={microTransition}
     >
       {content}
-    </button>
+    </motion.button>
   );
 }
