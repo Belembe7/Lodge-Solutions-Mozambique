@@ -129,15 +129,21 @@ function CatalogCard({
       whileHover={cardHover}
       className="group overflow-hidden rounded-3xl border border-brown-primary/10 bg-white shadow-sm will-change-transform transition-[box-shadow] duration-400 hover:shadow-[0_16px_36px_-14px_rgba(145,104,61,0.4)]"
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-[#F5F2EB]">
+      <div
+        className={cn(
+          "relative aspect-[16/10] overflow-hidden",
+          item.category === "Victron" ? "bg-black" : "bg-[#F5F2EB]",
+        )}
+      >
         <Image
           src={item.image}
           alt={title}
           fill
           className={cn(
-            "object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]",
-            (item.category === "BYD" || item.category === "Victron") &&
-              "object-contain p-4",
+            "transition-transform duration-500 ease-out group-hover:scale-[1.03]",
+            item.category === "BYD" || item.category === "Victron"
+              ? "object-contain p-3"
+              : "object-cover",
           )}
           sizes="(max-width: 768px) 100vw, 33vw"
         />

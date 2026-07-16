@@ -106,6 +106,9 @@ export const SERVICES: ServiceItem[] = [
   },
 ];
 
+export const BYD_PRODUCT_IMAGE = "/images/partners/byd-battery-box.png";
+export const VICTRON_PRODUCT_IMAGE = "/images/partners/victron-blue-power.png";
+
 export const SECTOR_SOLUTIONS: SectorSolution[] = [
   {
     id: "epc",
@@ -121,7 +124,7 @@ export const SECTOR_SOLUTIONS: SectorSolution[] = [
     description:
       "Baterias de lítio de referência mundial, com stock e suporte técnico local.",
     href: "/solucoes/byd",
-    image: "/images/partners/byd-battery-box.png",
+    image: BYD_PRODUCT_IMAGE,
   },
   {
     id: "victron",
@@ -129,7 +132,7 @@ export const SECTOR_SOLUTIONS: SectorSolution[] = [
     description:
       "Inversores e controladores Victron Energy para sistemas off grid e híbridos.",
     href: "/solucoes/victron",
-    image: "/images/partners/victron-energy.png",
+    image: VICTRON_PRODUCT_IMAGE,
     imageContain: true,
   },
   {
@@ -193,9 +196,6 @@ export const WHY_CHOOSE_US = [
   "Projetos personalizados",
   "Baixo impacto ambiental",
 ];
-
-export const BYD_PRODUCT_IMAGE = "/images/partners/byd-battery-box.png";
-export const VICTRON_PRODUCT_IMAGE = "/images/partners/victron-energy.png";
 
 export const PROJECTS: ProjectItem[] = [
   {

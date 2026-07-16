@@ -100,7 +100,7 @@ export const SOLUTION_DETAILS: SolutionDetail[] = [
     title: "Victron Energy",
     intro:
       "A LSM trabalha em parceria com a Victron Energy, disponibilizando o ecossistema Blue Power, composto por equipamentos de elevada qualidade para sistemas de energia.",
-    image: "/images/partners/victron-energy.png",
+    image: "/images/partners/victron-blue-power.png",
     imageContain: true,
     blocks: [
       {

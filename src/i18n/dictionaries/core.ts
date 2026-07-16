@@ -175,7 +175,7 @@ export const pt: Dictionary = {
   },
   solutions: {
     eyebrow: "",
-    title: "Energia certa para cada sector",
+    title: "Soluções",
     description:
       "Desenvolvemos soluções integradas de engenharia que combinam energia, construção sustentável e tecnologias avançadas para criar projetos eficientes, resilientes e adaptados às necessidades de Moçambique.",
     featured: {

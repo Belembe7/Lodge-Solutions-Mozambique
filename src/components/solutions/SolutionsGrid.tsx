@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import {
   BatteryFull,
+  Building2,
   Factory,
-  PlugZap,
   Sun,
-  TrendingUp,
+  Wrench,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
@@ -58,9 +58,10 @@ export const SOLUTIONS: SolutionItem[] = [
     variant: "featured",
   },
   {
-    id: "battery-box",
-    title: "Battery box",
-    description: "Armazenamento para autonomia contínua.",
+    id: "byd-mozambique",
+    title: "BYD em Moçambique",
+    description:
+      "Baterias de lítio de referência mundial, com stock e suporte técnico local.",
     image: "/images/partners/byd-battery-box.png",
     icon: BatteryFull,
     color: "blue",
@@ -69,8 +70,9 @@ export const SOLUTIONS: SolutionItem[] = [
   },
   {
     id: "modelo-epc",
-    title: "Modelo EPC",
-    description: "Do projeto à construção turnkey, responsabilidade única.",
+    title: "Modelo EPC (Engineering, Procurement & Construction)",
+    description:
+      "Do projeto à construção turnkey, engenharia, procurement e instalação com responsabilidade única.",
     image: "/images/solutions/modelo-epc.png",
     icon: Factory,
     color: "green",
@@ -78,21 +80,23 @@ export const SOLUTIONS: SolutionItem[] = [
     variant: "compact",
   },
   {
-    id: "instalacao",
-    title: "Instalação",
-    description: "Equipas técnicas para suporte contínuo.",
-    image: "/images/projects/solar-instalacao.png",
-    icon: PlugZap,
+    id: "edificio-sustentavel",
+    title: "Edifício Sustentável",
+    description:
+      "Engenharia e construção com materiais e práticas de baixo impacto ambiental.",
+    image: "/images/projects/edificio-sustentavel.png",
+    icon: Building2,
     color: "purple",
-    href: "/solucoes/victron",
+    href: "/#projetos",
     variant: "compact",
   },
   {
-    id: "consultoria",
-    title: "Consultoria",
-    description: "Estudos de viabilidade e retorno de investimento.",
+    id: "technical-support",
+    title: "Technical Support",
+    description:
+      "Assistência técnica especializada, manutenção e suporte contínuo para os seus sistemas.",
     image: "/images/solutions/technical-support.png",
-    icon: TrendingUp,
+    icon: Wrench,
     color: "coral",
     href: "/solucoes/technical-support",
     variant: "compact",
@@ -173,7 +177,7 @@ function SolutionCard({
             className={cn(
               "font-[family-name:var(--font-voice)] leading-tight font-semibold text-[#F4EFE4]",
               item.id === "energia-solar" && "text-[26px]",
-              item.id === "battery-box" && "text-[20px]",
+              item.id === "byd-mozambique" && "text-[20px]",
               item.variant === "compact" && "text-[17px]",
             )}
           >
@@ -195,7 +199,7 @@ function SolutionCard({
 }
 
 export function SolutionsGrid() {
-  const [solar, battery, epc, instalacao, consultoria] = SOLUTIONS;
+  const [solar, byd, epc, edificioSustentavel, technicalSupport] = SOLUTIONS;
 
   return (
     <motion.div
@@ -222,7 +226,7 @@ export function SolutionsGrid() {
           transition={{ duration: 0.8, ease: premiumEase }}
         >
           <SolutionCard
-            item={battery}
+            item={byd}
             priority
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 40vw"
           />
@@ -245,7 +249,7 @@ export function SolutionsGrid() {
           transition={{ duration: 0.8, ease: premiumEase }}
         >
           <SolutionCard
-            item={instalacao}
+            item={edificioSustentavel}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </motion.div>
@@ -255,7 +259,7 @@ export function SolutionsGrid() {
           className="sm:col-span-2 lg:col-span-1"
         >
           <SolutionCard
-            item={consultoria}
+            item={technicalSupport}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 33vw"
           />
         </motion.div>
